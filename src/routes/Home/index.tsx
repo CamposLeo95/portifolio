@@ -1,28 +1,39 @@
-import { HomeContainer, SecondContainer, CardLeft } from './styles'
+// Styled-Components
+import { SecondContainer, CardPhoto } from './styles'
 
+// Components
 import CardText from '../../components/CardText'
+import MainContainer from '../../components/MainContainer'
+
+//Images
+import Self from '../../assets/img/self.jpg'
+
+// Data
+import { resumo } from '../../assets/Data/data'
 
 export default function Home(){
 
     return(
-        <HomeContainer>
+        <MainContainer>
             <SecondContainer>
-                <CardLeft>
-                    <div></div>  
-                    <div></div> 
-                </CardLeft>
                 <CardText 
-                    topText=" Olá, eu sou..."
-                    title="Leonardo Campos"
-                    subtitle="Front End Developer"
-                    mainText="Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam repudiandae ad nostrum nesciunt ex inventore est iusto aperiam repellendus suscipit. Ipsa vel at quos voluptas voluptatum dicta! Repudiandae, culpa dolor.Aliquam repudiandae ad nostrum nesciunt ex inventore est iusto aperiam repellendus suscipit. Ipsa vel at quos voluptas voluptatum dicta! Repudiandae, culpa dolor."
-                    color="#06c6e7"
+                    topText={resumo[0].topText}
+                    title={resumo[0].title}
+                    subtitle={resumo[0].subtitle}
+                    mainText={resumo[0].mainText}
+                    color="#66fff2"
                     shadow={true}
                     secondWidth={90}
-                    textColor={"#222222"}
-                    bgColor={"transparent"}
-                />             
+                    textColor={"#ffffff"}
+                    bgColor={"#161616c0"}
+                    boxShadow={false}
+                />       
+                <CardPhoto>
+                    <div>
+                        <img src={Self} />
+                    </div>
+                </CardPhoto>      
             </SecondContainer>
-        </HomeContainer>
+        </MainContainer>
     )
 }

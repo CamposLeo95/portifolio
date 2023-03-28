@@ -1,11 +1,16 @@
+// Hooks
 import { useState } from "react"
 
-import { HomeContainer, SecondContainer } from "./styles"
+// Styled-Components
+import { SecondContainer } from "./styles"
 
+// Components
 import Carrossel from "../../components/Carrossel"
 import CardText from "../../components/CardText"
+import MainContainer from '../../components/MainContainer'
 
-import { linguagens } from "../../assets/Arrays/linguagens"
+// Data
+import { linguagens } from "../../assets/Data/data"
 
 export default function Skills(){
 
@@ -28,7 +33,7 @@ export default function Skills(){
     }
 
     return(
-        <HomeContainer idImg={idImg}> 
+        <MainContainer> 
             <SecondContainer color={linguagens[idImg].color}>
                 <Carrossel 
                     idImg={idImg} 
@@ -44,10 +49,11 @@ export default function Skills(){
                     shadow={true}
                     secondWidth={80}
                     textColor={"#ffffff"}
-                    bgColor={"#383838"}
+                    bgColor={"#000000c8"}
+                    boxShadow={true}
                 />    
             </SecondContainer>
-        </HomeContainer>
+        </MainContainer>
         
     )
 }

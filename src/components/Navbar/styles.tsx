@@ -7,11 +7,16 @@ export const HeaderContainer = styled.div`
     flex-direction:column;
     align-items: center;
     border-right: 1px solid #C2C1BA;
-    background: #181818;
+    background-color: #2b2b2bdc;
+    z-index: 4;
+    
+    @media (max-width: 1150px){
+        display: none;
+    }
  
 `
 export const SecondContainer = styled.div`
-
+    
     width: 80%;
     height:100%;
     display: flex;

@@ -1,14 +1,18 @@
-import { HomeContainer, SecondContainer } from "./styles"
+// Styled- Components
+import { SecondContainer } from "./styles"
+
+// Components
+import MainContainer from "../../components/MainContainer"
 
 export default function Projects(){
 
     return(
-        <HomeContainer>
+        <MainContainer>
             <SecondContainer>
-                <h1>Hello World</h1>
-                
+               <h1>Ola</h1>
+               <h1>Ola</h1>
             </SecondContainer>
-        </HomeContainer>
+        </MainContainer>
         
     )
 }

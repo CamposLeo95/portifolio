@@ -1,5 +1,4 @@
-
-
+// Styled-Components
 import { Box } from "./styles"
 
 interface NavBoxPros{
@@ -7,7 +6,7 @@ interface NavBoxPros{
     icon: string
 }
 
-export default function NavBox({ link, icon }:NavBoxPros){
+export default function MainContainer({ link, icon }:NavBoxPros){
 
     return(
         <Box>

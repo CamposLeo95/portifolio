@@ -11,56 +11,45 @@ export const Container = styled.div`
     display: flex;
     justify-content: space-around;
     align-items: center;
+    position: relative;
+    animation: showObject 3s;
+    
 `
 
 export const CardSkills = styled.div`
-   @keyframes remix {
-      0%{
-         transform: rotateZ(0deg) 
-      }
-      25%{
-         transform: rotateZ(8deg) 
-      }
-      50%{
-         transform: rotateZ(0deg) 
-      }
-      75%{
-         transform: rotateZ(-8deg) 
-      }
-      100%{
-         transform: rotateZ(0deg) 
-      }
-
-   }
 
     width: 70%;
     height: 70%;
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: remix 2s linear infinite;
+    position: relative;
+    animation: remix 2s linear infinite, startedBottom 1.5s;;
 
     img{
       width: 150px;
     }
 
 `
- 
+
  export const ArrowButton= styled.button<ArrowButtonProps>`
     font-size: 50px;
     cursor: pointer;
     rotate: ${ ({side}) => side ? "0deg": "180deg"};
-    opacity:.8;
-    background: none;
+    opacity:.5;
+    background-color: transparent;
     border: none;
+
    
     &:hover{
-       opacity:.8;
-       text-shadow: 1px 1px 15px #008cff;;
+       opacity: 1;
+       text-shadow: 1px 1px 10px #008cff;
+       transition: .5s;
     }
  
     i{
        color: #757575;
+       font-size: 5rem;
     }
 
     & i:hover{

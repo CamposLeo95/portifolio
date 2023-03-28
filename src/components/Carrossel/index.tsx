@@ -23,14 +23,14 @@ export default function Carrossel({ idImg, handleBtnNext, handleBtnPrev }: Carro
 
     return(
         <Container> 
-            <ArrowButton side={true} onClick={() => handleBtnPrev()}>
-                <i className="bi bi-caret-left-square"/>
+            <ArrowButton side={false} onClick={() => handleBtnPrev()}>
+                <i className="bi bi-caret-right-fill"/>
             </ArrowButton>
             <CardSkills>
                 <img src={imagen[idImg]}/>
             </CardSkills>
-            <ArrowButton side={false} onClick={ () => handleBtnNext()}>
-                <i className="bi bi-caret-left-square"/>
+            <ArrowButton side={true} onClick={ () => handleBtnNext()}>
+                <i className="bi bi-caret-right-fill"/>
             </ArrowButton>
         </Container>
     )
