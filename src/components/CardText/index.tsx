@@ -13,6 +13,7 @@ interface CardTextPorps{
     bgColor?: string,
     textColor: string,
     secondWidth: number,
+    animation: string
 }
 
 export default function CardText({
@@ -27,7 +28,8 @@ export default function CardText({
      secondWidth,
      bgColor,
      textColor,
-     boxShadow
+     boxShadow,
+     animation
 }:CardTextPorps){
     return(
         <Card 
@@ -39,6 +41,7 @@ export default function CardText({
             bgColor={bgColor}
             textColor={textColor}
             boxShadow={boxShadow}
+            animation={animation}
         >
             <div>
                 <h3>{topText}</h3>

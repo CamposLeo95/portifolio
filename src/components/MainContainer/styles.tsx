@@ -4,9 +4,9 @@ interface  NuvemProps{
     width: number;
     top: number;
     left?: number;
-    sec: number;
-    delay: number;
-    animation: string
+    sec?: number;
+    delay?: number;
+    animation?: string
 }
 
 export const Container = styled.div`
@@ -18,6 +18,7 @@ export const Container = styled.div`
     background-color: #87dbf0;
     position: relative;
     overflow: hidden;
+    
 
 `
 export const Nuvem = styled.img<NuvemProps>`

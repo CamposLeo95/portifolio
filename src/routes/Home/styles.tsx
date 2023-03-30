@@ -1,23 +1,20 @@
 import styled from 'styled-components'
 
-export const HomeContainer = styled.div`
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-`
-
 export const SecondContainer = styled.div`
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 60px 0 0 60px;
 
     @media (max-width: 1150px) {
         flex-direction: column;
+        margin: 60px 0 0 0;
+    }
+
+    @media (max-height: 620px) {       
+        height: 80%;
     }
 
 
@@ -30,9 +27,10 @@ export const CardPhoto = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    animation: startedRight 2s;
 
     & div{
-        min-width:450px;
+        min-width:350px;
         height: 450px;
         border-radius: 50%;
         overflow: hidden;
@@ -53,14 +51,13 @@ export const CardPhoto = styled.div`
         & div{
             width: 350px;
             height: 350px;
-            min-width: 310px;
             bottom: 25px;
 
             & img{
             width: 350px;
             position: relative;
             top: -40px;
-            right: 10px;
+            right: 8px;
         }
         }
         
@@ -69,17 +66,34 @@ export const CardPhoto = styled.div`
     @media (max-width: 500px) {
         
         & div{
-            width: 450px;
+            width: 250px;
             height: 300px;
             min-width: 310px;
             bottom: 25px;
 
             & img{
+            width: 300px;
             position: relative;
-            top: -40px;
-            right: 40px;
+            top: -50px;
+            right: 0px;
         }
         }
     }
 
+    @media (max-height: 620px) {       
+        & div{
+            width: 150px;
+            height: 150px;
+            bottom: 25px;
+            min-width: 50px;
+
+            & img{
+            width: 150px;
+            position: relative;
+            top: -20px;
+            right: 0px;
+        }
+        }
+
+    }
 `

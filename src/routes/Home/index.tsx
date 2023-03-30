@@ -27,6 +27,7 @@ export default function Home(){
                     textColor={"#ffffff"}
                     bgColor={"#161616c0"}
                     boxShadow={false}
+                    animation={"startedTop"}
                 />       
                 <CardPhoto>
                     <div>

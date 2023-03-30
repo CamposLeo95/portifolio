@@ -5,7 +5,7 @@ interface ArrowButtonProps {
  }
 
 export const Container = styled.div`
-    width: 50%;
+    width: 30%;
     height: 100%;
     padding: 20px;
     display: flex;
@@ -13,11 +13,14 @@ export const Container = styled.div`
     align-items: center;
     position: relative;
     animation: showObject 3s;
+
+    @media (max-width: 1150px){
+      width: 70%;
+    }
     
 `
 
 export const CardSkills = styled.div`
-
     width: 70%;
     height: 70%;
     display: flex;
@@ -28,6 +31,15 @@ export const CardSkills = styled.div`
 
     img{
       width: 150px;
+    }
+
+    @media (max-height: 880px) {
+      margin-top: 40px;
+      height: 40%;
+
+      & img{
+         width: 110px;
+      }
     }
 
 `
@@ -56,4 +68,8 @@ export const CardSkills = styled.div`
        color: #008cff;
     }
  
+    @media (max-height: 880px) {
+      margin-top: 40px;
+      
+    }
  `

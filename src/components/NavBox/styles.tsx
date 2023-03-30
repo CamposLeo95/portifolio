@@ -8,8 +8,8 @@ export const Box = styled.div`
 
 
     :hover{
-        border: 1px solid #008cff;
-        box-shadow: 0px 0px 10px #008cff;
+        border: 1px solid #fff;
+        box-shadow: 0px 0px 10px #fff;
     }
     
 
@@ -22,7 +22,13 @@ export const Box = styled.div`
     }
 
     & li:hover{
-       color: #008cff;
+       text-shadow: 0px 0px 10px #fff;
+    }
+
+    @media (max-width: 1150px) {
+        width: 150px;
+        height: 80px;
+        margin-bottom:30px;
     }
 
 `

@@ -1,32 +1,25 @@
 import styled from "styled-components";
 
-export const HomeContainer = styled.div`
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    background-color: #ececec;
-    
-`
 export const SecondContainer = styled.div`
-    width: 80%;
+    width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 `
 export const CardForm = styled.div`
-    width: 60%; 
-    min-width:300px;
+    width: 95%; 
+    min-width:320px;
+    max-width: 700px;
     height: 80%;
-    background:#383838;
+    background:#0c0c0cc8;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
     border-radius: 10px;
     box-shadow: 2px 2px 10px #000000;
-    animation: startedLeft 1.5s;
+    animation: startedLeft 2s;
     position: relative;
 
     & h1{
@@ -38,7 +31,7 @@ export const CardForm = styled.div`
     & div{
         display: flex;
         justify-content: center;
-        width: 90%;
+        width: 85%;
 
         & i{
             font-size: 3rem;
@@ -105,4 +98,5 @@ export const Form = styled.form`
         text-shadow:1px 1px 40px #ffffff;
         /* color:#008cff; */
     }
+
 `

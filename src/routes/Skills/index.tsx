@@ -51,6 +51,7 @@ export default function Skills(){
                     textColor={"#ffffff"}
                     bgColor={"#000000c8"}
                     boxShadow={true}
+                    animation={"startedRight"}
                 />    
             </SecondContainer>
         </MainContainer>

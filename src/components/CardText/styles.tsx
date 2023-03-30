@@ -9,6 +9,7 @@ interface CardProps{
     secondWidth: number,
     bgColor?: string
     textColor: string
+    animation: string
 }
 
 export const Card = styled.div<CardProps>`
@@ -37,29 +38,43 @@ export const Card = styled.div<CardProps>`
         max-height: 450px;
         padding: 20px;
         background: ${({bgColor})=> bgColor};
-        border-radius: 20px; 
+        border-radius: 13px; 
         color:${({textColor})=> textColor}; 
-        animation: startedRight 2s;
+        animation: ${({animation})=> animation} 2s;
         box-shadow: ${ ({boxShadow})=> boxShadow ? "2px 2px 10px #000000": ""};
         
     }
 
     & h1{
         color: ${({color})=> color};
+        font-size: 4.5rem;
         
     }
-    
-    & h1, h3, h4{
-        line-height: 5rem;
+    & h1{
+        line-height: 8rem;
+    }
+
+    & h3, h4{
+        line-height: 7rem;
     }
 
     & p{
         margin-bottom: 2rem;
     }
 
+    @media (max-width: 1240px){
+        & h1{
+        font-size: 3.2rem
+    }
+    }
+
     @media (max-width: 1150px){
         width: 100%;
         text-align: center;
+
+        & h1, h3, h4{
+        line-height: 5rem;
+    }
 
         & div{
             width:100%;

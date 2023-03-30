@@ -3,14 +3,14 @@ import { SecondContainer } from "./styles"
 
 // Components
 import MainContainer from "../../components/MainContainer"
+import CardProject from "../../components/CardProject"
 
 export default function Projects(){
 
     return(
         <MainContainer>
-            <SecondContainer>
-               <h1>Ola</h1>
-               <h1>Ola</h1>
+            <SecondContainer>   
+                <CardProject />  
             </SecondContainer>
         </MainContainer>
         
