@@ -5,8 +5,8 @@ export const resumo = [
         id: 0,
         topText:" Olá, eu sou...",
         title: "Leonardo Campos",
-        subtitle:"Front End Developer",
-        mainText: "Estou em transição de carreira para a area de desenvolvimento de software, atualmente estou como freelance construindo projetos de forma autonoma. ", 
+        subtitle:"Desenvolvedor Front End",
+        mainText: "Estou em transição de carreira para a area de desenvolvimento de software, atualmente estou como freelance criando projetos para praticar e melhorar minha meus conhecimentos, mas disposto a entrar para um time de tecnologia. ", 
         color:"#06c6e7"
     },
 ]
@@ -60,11 +60,11 @@ export const projetos = [
     {
         id: 0,
         nameImage: iconTec.css,
-        title: "Portifolio",
+        title: "Portfolio",
         tecnologies:[iconTec.ts, iconTec.react, iconTec.html, iconTec.css, iconTec.styled ],
         linkProject: "./", 
         linkGitHub:"https://github.com/CamposLeo95/Todo-React-Ts",
-        description: "Este projeto é o portifolio que crei para mostra um pouco mais sobre mim e apresentar as tecnologias que trabalho no momento.",
+        description: "Este projeto é o portfolio que crei para mostra um pouco mais sobre mim e apresentar as tecnologias que trabalho no momento.",
     },
     
     {
