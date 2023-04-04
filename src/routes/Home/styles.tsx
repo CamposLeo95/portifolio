@@ -6,11 +6,11 @@ export const SecondContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 60px 0 0 60px;
+    margin: 30px 0 0 60px;
 
     @media (max-width: 1150px) {
         flex-direction: column;
-        margin: 60px 0 0 0;
+        margin: 30px 0 0 0;
     }
 
     @media (max-height: 620px) {       
@@ -22,7 +22,7 @@ export const SecondContainer = styled.div`
 
 export const CardPhoto = styled.div`
     width: 50%;
-    height: 100vh;
+    height: 100%;
     position: relative;
     display: flex;
     justify-content: center;
@@ -48,13 +48,14 @@ export const CardPhoto = styled.div`
     }
 
     @media (max-width: 1150px) {
+        height: 50%;
         & div{
-            width: 350px;
-            height: 350px;
+            height: 150px;
+            min-width: 150px;
             bottom: 25px;
 
             & img{
-            width: 350px;
+            width: 150px;
             position: relative;
             top: -40px;
             right: 8px;
@@ -66,34 +67,16 @@ export const CardPhoto = styled.div`
     @media (max-width: 500px) {
         
         & div{
-            width: 250px;
-            height: 300px;
-            min-width: 310px;
+            min-width: 130px;
             bottom: 25px;
 
             & img{
-            width: 300px;
+            min-width: 150px;
             position: relative;
-            top: -50px;
+            top: -30px;
             right: 0px;
         }
         }
     }
 
-    @media (max-height: 620px) {       
-        & div{
-            width: 150px;
-            height: 150px;
-            bottom: 25px;
-            min-width: 50px;
-
-            & img{
-            width: 150px;
-            position: relative;
-            top: -20px;
-            right: 0px;
-        }
-        }
-
-    }
 `

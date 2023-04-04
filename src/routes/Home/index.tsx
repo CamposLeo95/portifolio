@@ -13,22 +13,25 @@ import { resumo } from '../../assets/Data/data'
 
 export default function Home(){
 
+    const settings ={
+        topText:resumo[0].topText,
+        title:resumo[0].title,
+        subtitle:resumo[0].subtitle,
+        mainText:resumo[0].mainText,
+        color:"#66fff2",
+        shadow:true,
+        secondWidth:90,
+        textColor:"#ffffff",
+        bgColor:"#161616c0",
+        boxShadow:false,
+        animation:"startedTop",
+        curriculo: true
+    }
+
     return(
         <MainContainer>
             <SecondContainer>
-                <CardText 
-                    topText={resumo[0].topText}
-                    title={resumo[0].title}
-                    subtitle={resumo[0].subtitle}
-                    mainText={resumo[0].mainText}
-                    color="#66fff2"
-                    shadow={true}
-                    secondWidth={90}
-                    textColor={"#ffffff"}
-                    bgColor={"#161616c0"}
-                    boxShadow={false}
-                    animation={"startedTop"}
-                />       
+                <CardText  settings={settings}/>       
                 <CardPhoto>
                     <div>
                         <img src={Self} />

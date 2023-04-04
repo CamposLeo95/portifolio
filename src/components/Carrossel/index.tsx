@@ -7,7 +7,7 @@ import tsImg from '../../assets/img/icons/ts.png'
 import htmlImg from '../../assets/img/icons/html.png'
 import cssImg from '../../assets/img/icons/css.png'
 import nodeImg from '../../assets/img/icons/node.png'
-import nextImg from '../../assets/img/icons/next.png'
+import nextImg from '../../assets/img/icons/styled.png'
 
 
 
@@ -19,7 +19,7 @@ interface CarroselProps{
 
 export default function Carrossel({ idImg, handleBtnNext, handleBtnPrev }: CarroselProps){
 
-    const imagen = [jsImg, reactImg, tsImg, htmlImg, cssImg, nextImg, nodeImg]
+    const imagen = [jsImg, reactImg, tsImg, htmlImg, cssImg, nodeImg, nextImg, ]
 
     return(
         <Container> 

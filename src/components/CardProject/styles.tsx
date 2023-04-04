@@ -1,8 +1,10 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
-        width: 320px;
-        height: 550px;
+        width: 65%;
+        min-width: 320px;
+        max-width: 400px;
+        height: 510px;
         border-radius: 15px;
         font-size: 1.6rem;
         box-shadow: 1px 1px 10px black;
@@ -18,38 +20,36 @@ export const Wrapper = styled.div`
                 color: #fff;
             }
 
-    & .image{
+    & .description{
         width: 100%;
-        height: 40%;
-        border-radius: 15px 15px 0 0;
-        background-color: #e7e7e7;
-    }
-
-    & .content{
-        width: 100%;
-        height: 60%;
-        color: #fff;
+        height: 50%;
         border-radius: 0 0 15px 15px;
-        background-color: #1d1d1dea;
+        background-color: #e7e7e7;
+        overflow: hidden;
+        padding: 15px;
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
-        padding: 8px;
 
-        & .wrapperSpan{
-            width: 100%;
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
+        & .textDescription{
+            height: 70%;
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.7rem;
+            border-bottom: 1px solid #979797b2;
         }
 
         & .wrapperLink{
             width: 60%;
+            height: 30%;
             display: flex;
             justify-content: space-around;
             align-items: center;
 
-            & button {
+        & button {
                 width: 100px;
                 height: 50px;
                 font-size: 2rem;
@@ -60,21 +60,57 @@ export const Wrapper = styled.div`
                 border: 1px solid white;
                 background-color: #3fd9ff;
                 transition: 0.3s;
+                margin-right: 15px;
+
+                & a{
+                    color: white;
+                }
             } 
 
             & button:hover {
                 padding: 10px;
                 cursor: pointer;
-                color: white;
                 border: 1px solid white;
-                box-shadow: 0px 0px 10px white;
+                box-shadow: 0px 0px 10px white; 
             } 
 
             & i{
                 font-size: 3.5rem;
-                color: white;
+                color: #000;
             }
         }
+    }
+
+    & img {
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+    }
+
+    & .content{
+        width: 100%;
+        height: 50%;
+        color: #fff;
+        border-radius: 15px 15px 0 0 ;
+        background-color: #1d1d1dea;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px;
+
+        & .wrapperImg{
+            width: 100%;
+            display: flex;
+            padding: 10px;
+            justify-content: space-between;
+
+        }
+
+        & .tecImg{
+            width: 36px
+        }
+     
     }
 
     

@@ -1,14 +1,17 @@
+// ----------------------------------
+
 export const resumo = [
     {
         id: 0,
         topText:" Olá, eu sou...",
         title: "Leonardo Campos",
         subtitle:"Front End Developer",
-        mainText: "Estou em transição de carreira para a area de desenvolvimento de software, atualmente estou como freelance construindo projetos de forma autonoma. Sou uma pessoa extrovertidade e que gosta de aprender e viver de forma intensa ", 
+        mainText: "Estou em transição de carreira para a area de desenvolvimento de software, atualmente estou como freelance construindo projetos de forma autonoma. ", 
         color:"#06c6e7"
     },
 ]
 
+// ----------------------------------
 
 export const linguagens = [
     {
@@ -46,5 +49,51 @@ export const linguagens = [
         title: "Node.JS",
         mainText: "Node.js é uma plataforma de desenvolvimento de software que executa código JavaScript fora do navegador, sendo altamente eficiente e escalável para aplicativos de rede em tempo real. Ele ja possui um grande ecossistema de módulos e pacotes disponíveis para facilitar o desenvolvimento de aplicativos",
         color: "#90df29"
+    },
+]
+
+// ----------------------------------
+
+import { iconTec } from "./images"
+
+export const projetos = [
+    {
+        id: 0,
+        nameImage: iconTec.css,
+        title: "Portifolio",
+        tecnologies:[iconTec.ts, iconTec.react, iconTec.html, iconTec.css, iconTec.styled ],
+        linkProject: "./", 
+        linkGitHub:"https://github.com/CamposLeo95/Todo-React-Ts",
+        description: "Este projeto é o portifolio que crei para mostra um pouco mais sobre mim e apresentar as tecnologias que trabalho no momento.",
+    },
+    
+    {
+        id: 1,
+        nameImage: iconTec.css,
+        title: "Todo List",
+        tecnologies:[iconTec.ts, iconTec.react, iconTec.html, iconTec.css, ],
+        linkProject: "https://todo-react-ts-ivory.vercel.app/", 
+        linkGitHub:"https://github.com/CamposLeo95/Todo-React-Ts",
+        description: "Criei este TodoList com orientação de Matheus Battisti do Hora de Codar para estudar o uso da tecnologia TypeScript junto ao React, o projeto apresenta uma lista de tarefa em que é possivel registrarmos, editarmos e apagarmos tarefas",
+    },
+
+    {
+        id: 2,
+        title: "Jogo da velha",
+        nameImage: iconTec.css,
+        tecnologies:[iconTec.js, iconTec.html, iconTec.css, iconTec.git],
+        linkProject: "https://camposleo95.github.io/Jogo-da-Velha/", 
+        linkGitHub:"https://github.com/CamposLeo95/Jogo-da-Velha",
+        description: "Projeto criado para simular um jogo da velha, construido logo quando comecei o curso ProgramadorBR utilizei tecnologias mais basicas como JavaScript para introduzir a logica do jogo",
+    },
+
+    {
+        id: 3,
+        title: "Churrascometro",
+        nameImage: iconTec.js,
+        tecnologies:[iconTec.js, iconTec.html, iconTec.css, iconTec.git],
+        linkProject: "https://camposleo95.github.io/Projeto-Churrascometro/", 
+        linkGitHub:"https://github.com/CamposLeo95/Projeto-Churrascometro",
+        description: "Este é um projeto simples que fiz logo no começo quando estava começando a estudar desenvolvimento web no curso ProgramadorBR, ele simula a quantidade necessaria de itens para que seja feito um churrasco, baseado na quantidade de pessoas e horas.",
     },
 ]

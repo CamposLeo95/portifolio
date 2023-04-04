@@ -58,8 +58,9 @@ export const CardSkills = styled.div`
        text-shadow: 1px 1px 10px #008cff;
        transition: .5s;
     }
+
  
-    i{
+    & i{
        color: #757575;
        font-size: 5rem;
     }

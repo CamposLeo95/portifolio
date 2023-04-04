@@ -13,8 +13,22 @@ import MainContainer from '../../components/MainContainer'
 import { linguagens } from "../../assets/Data/data"
 
 export default function Skills(){
-
     const [idImg, setIdImg] = useState<number>(0)
+
+    const settingsTxt = {
+        title:linguagens[idImg].title,
+        mainText:linguagens[idImg].mainText,
+        color:linguagens[idImg].color,
+        align:"center",
+        margin:"15px",
+        shadow:true,
+        secondWidth:80,
+        textColor:"#ffffff",
+        bgColor:"#000000c8",
+        boxShadow:true,
+        animation:"startedRight",
+        curriculo: false
+    }    
 
     const handleBtnPrev = ()=>{
         if(idImg <= 0){
@@ -40,19 +54,7 @@ export default function Skills(){
                     handleBtnNext={handleBtnNext} 
                     handleBtnPrev={handleBtnPrev}
                 />
-                <CardText 
-                    title={linguagens[idImg].title}
-                    mainText={linguagens[idImg].mainText}
-                    color={linguagens[idImg].color}
-                    align="center"
-                    margin="15px"
-                    shadow={true}
-                    secondWidth={80}
-                    textColor={"#ffffff"}
-                    bgColor={"#000000c8"}
-                    boxShadow={true}
-                    animation={"startedRight"}
-                />    
+                <CardText settings={settingsTxt}/>    
             </SecondContainer>
         </MainContainer>
         

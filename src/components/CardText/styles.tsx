@@ -16,7 +16,7 @@ export const Card = styled.div<CardProps>`
 
     position: relative;
     width: 50%;
-    min-width: 400px;
+    min-width: 460px;
     height: 100%;
     padding: 4rem;
     font-size: 2rem;
@@ -62,6 +62,33 @@ export const Card = styled.div<CardProps>`
         margin-bottom: 2rem;
     }
 
+    & button {
+        padding: 15px;
+        background: #24d3ff;
+        border-radius: 3px;
+        border:none;
+        transition: 0.5s;
+        
+        & a{
+            color: #ffffff;
+            font-size: 2rem;
+            font-weight: bold;
+            transition: 0.5s;
+        }
+    }
+
+    & button:hover{
+        background: none;
+        border:1px solid #24d3ff; 
+        box-shadow: 0px 0px 10px #fff;
+        
+        & a{
+            color: #24d3ff;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+    }
+
     @media (max-width: 1240px){
         & h1{
         font-size: 3.2rem
@@ -77,7 +104,7 @@ export const Card = styled.div<CardProps>`
     }
 
         & div{
-            width:100%;
+            width:92%;
             max-width: 700px;
             height:100%;
         }
