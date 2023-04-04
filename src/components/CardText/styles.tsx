@@ -91,8 +91,12 @@ export const Card = styled.div<CardProps>`
 
     @media (max-width: 1240px){
         & h1{
-        font-size: 3.2rem
-    }
+            font-size: 3rem
+        }
+
+        & p{
+            font-size: 1.8rem
+        }
     }
 
     @media (max-width: 1150px){
@@ -101,7 +105,11 @@ export const Card = styled.div<CardProps>`
 
         & h1, h3, h4{
         line-height: 5rem;
-    }
+        }
+
+        & p{
+            font-size: 2rem
+        }
 
         & div{
             width:92%;
