@@ -89,6 +89,16 @@ export const projetos = [
 
     {
         id: 3,
+        title: "Previsão do tempo",
+        nameImage: iconTec.js,
+        tecnologies:[iconTec.js, iconTec.html, iconTec.css, iconTec.git],
+        linkProject: "https://camposleo95.github.io/Projeto-previsao-tempo/", 
+        linkGitHub:"https://github.com/CamposLeo95/Projeto-previsao-tempo",
+        description: "Projeto em que faço o consumo de uma API que devolve dados de previsão do tempo, a construção dele foi baseada em uma semana intensiva no DevClub com o Rodolfo Mori ",
+    },
+
+    {
+        id: 4,
         title: "Churrascometro",
         nameImage: iconTec.js,
         tecnologies:[iconTec.js, iconTec.html, iconTec.css, iconTec.git],
