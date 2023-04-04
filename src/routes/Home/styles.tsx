@@ -14,7 +14,7 @@ export const SecondContainer = styled.div`
     }
 
     @media (max-height: 620px) {       
-        height: 80%;
+        height: 100%;
     }
 
 
