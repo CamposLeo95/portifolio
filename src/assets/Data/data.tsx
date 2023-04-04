@@ -6,7 +6,7 @@ export const resumo = [
         topText:" Olá, eu sou...",
         title: "Leonardo Campos",
         subtitle:"Desenvolvedor Front End",
-        mainText: "Estou em transição de carreira para a area de desenvolvimento de software, atualmente estou como freelance criando projetos para praticar e melhorar minha meus conhecimentos, mas disposto a entrar para um time de tecnologia. ", 
+        mainText: "Estou em transição de carreira para a área de desenvolvimento de software. No momento, atuo como freelancer criando projetos para praticar e aprimorar meus conhecimentos, mas disposto a entrar para um time de tecnologia.", 
         color:"#06c6e7"
     },
 ]
@@ -64,7 +64,7 @@ export const projetos = [
         tecnologies:[iconTec.ts, iconTec.react, iconTec.html, iconTec.css, iconTec.styled ],
         linkProject: "./", 
         linkGitHub:"https://github.com/CamposLeo95/Todo-React-Ts",
-        description: "Este projeto é o portfolio que crei para mostra um pouco mais sobre mim e apresentar as tecnologias que trabalho no momento.",
+        description: "Este é o meu portfólio pessoal, criado para mostrar mais sobre mim e as tecnologias em que trabalho atualmente. Aqui você encontrará informações detalhadas sobre minha experiência e habilidades, com o objetivo de demonstrar como posso agregar valor a um projeto ou empresa.",
     },
     
     {
@@ -74,7 +74,7 @@ export const projetos = [
         tecnologies:[iconTec.ts, iconTec.react, iconTec.html, iconTec.css, ],
         linkProject: "https://todo-react-ts-ivory.vercel.app/", 
         linkGitHub:"https://github.com/CamposLeo95/Todo-React-Ts",
-        description: "Criei este TodoList com orientação de Matheus Battisti do Hora de Codar para estudar o uso da tecnologia TypeScript junto ao React, o projeto apresenta uma lista de tarefa em que é possivel registrarmos, editarmos e apagarmos tarefas",
+        description: "Desenvolvi este aplicativo TodoList com a orientação de Matheus Battisti, do Hora de Codar, para aprimorar meus conhecimentos em TypeScript e React. O projeto consiste em uma lista de tarefas em que é possível registrar, editar e excluir tarefas conforme necessário. ",
     },
 
     {
@@ -94,7 +94,7 @@ export const projetos = [
         tecnologies:[iconTec.js, iconTec.html, iconTec.css, iconTec.git],
         linkProject: "https://camposleo95.github.io/Projeto-previsao-tempo/", 
         linkGitHub:"https://github.com/CamposLeo95/Projeto-previsao-tempo",
-        description: "Projeto em que faço o consumo de uma API que devolve dados de previsão do tempo, a construção dele foi baseada em uma semana intensiva no DevClub com o Rodolfo Mori ",
+        description: "Este projeto consiste em uma aplicação que consome uma API de previsão do tempo para apresentar informações atualizadas sobre as condições climáticas. A construção da aplicação foi baseada em um curso intensivo sob a orientação do Rodolfo Mori, do DevClub. ",
     },
 
     {
@@ -104,6 +104,6 @@ export const projetos = [
         tecnologies:[iconTec.js, iconTec.html, iconTec.css, iconTec.git],
         linkProject: "https://camposleo95.github.io/Projeto-Churrascometro/", 
         linkGitHub:"https://github.com/CamposLeo95/Projeto-Churrascometro",
-        description: "Este é um projeto simples que fiz logo no começo quando estava começando a estudar desenvolvimento web no curso ProgramadorBR, ele simula a quantidade necessaria de itens para que seja feito um churrasco, baseado na quantidade de pessoas e horas.",
+        description: "Durante meus primeiros estudos em desenvolvimento web no curso ProgramadorBR, criei um projeto simples que consiste em simular a quantidade de itens necessários para realizar um churrasco, com base no número de pessoas e tempo de duração do evento.",
     },
 ]
