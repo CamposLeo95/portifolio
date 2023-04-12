@@ -6,7 +6,7 @@ export const SecondContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 30px 0 0 60px;
+    margin: -20px 0 0 60px;
 
     @media (max-width: 1150px) {
         flex-direction: column;
@@ -30,8 +30,8 @@ export const CardPhoto = styled.div`
     animation: startedRight 2s;
 
     & div{
-        min-width:350px;
-        height: 450px;
+        min-width:250px;
+        height: 350px;
         border-radius: 50%;
         overflow: hidden;
         border: 5px solid white;
@@ -39,7 +39,7 @@ export const CardPhoto = styled.div`
         position: relative;
 
         & img{
-            width: 450px;
+            width: 350px;
             position: relative;
             top: -40px;
             right: 8px;

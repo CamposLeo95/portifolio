@@ -64,26 +64,25 @@ export const Card = styled.div<CardProps>`
 
     & button {
         padding: 15px;
-        background: #24d3ff;
+        background: none;
+        border:1px solid #fff; 
         border-radius: 3px;
-        border:none;
-        transition: 0.5s;
+        transition: 0.2s;
         
         & a{
             color: #ffffff;
             font-size: 2rem;
             font-weight: bold;
-            transition: 0.5s;
+            transition: 0.2s;
         }
     }
 
     & button:hover{
-        background: none;
-        border:1px solid #24d3ff; 
-        box-shadow: 0px 0px 10px #fff;
+        background: #0db2db;
+        box-shadow: 0px 0px 3px #fff;
         
         & a{
-            color: #24d3ff;
+            color: #fff;
             font-size: 2rem;
             font-weight: bold;
         }
