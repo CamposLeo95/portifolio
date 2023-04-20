@@ -28,6 +28,7 @@ export const HeaderContainer = styled.div<HeaderContainerProps>`
         height: 8vh;
         width:100%;
         background: #1d1d1dea;
+        position: initial;
 
         & button{
             position: relative;

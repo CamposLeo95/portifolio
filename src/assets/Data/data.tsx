@@ -64,7 +64,7 @@ export const projetos = [
         tecnologies:[iconTec.ts, iconTec.react, iconTec.html, iconTec.css, iconTec.styled ],
         linkProject: "./", 
         linkGitHub:"https://github.com/CamposLeo95/Todo-React-Ts",
-        description: "Este é o meu portfólio pessoal, criado para mostrar mais sobre mim e as tecnologias em que trabalho atualmente. Aqui você encontrará informações detalhadas sobre minha experiência e habilidades, com o objetivo de demonstrar como posso agregar valor a um projeto ou empresa.",
+        description: "Portfólio criado utilizando React, TypeScript e Styled-Components para demonstrar meu perfil e apresentar as tecnologias e projetos feitos.",
     },
     
     {
@@ -74,7 +74,7 @@ export const projetos = [
         tecnologies:[iconTec.ts, iconTec.react, iconTec.html, iconTec.css, ],
         linkProject: "https://todo-react-ts-ivory.vercel.app/", 
         linkGitHub:"https://github.com/CamposLeo95/Todo-React-Ts",
-        description: "Desenvolvi este aplicativo TodoList com a orientação de Matheus Battisti, do Hora de Codar, para aprimorar meus conhecimentos em TypeScript e React. O projeto consiste em uma lista de tarefas em que é possível registrar, editar e excluir tarefas conforme necessário. ",
+        description: "Projeto TodoList, feito com a orientação de Matheus Battisti, do Hora de Codar, utilizando TypeScript e React. O projeto consiste em uma lista de tarefas em que é possível registrar, editar e excluir tarefas conforme necessário. ",
     },
 
     {
@@ -84,7 +84,7 @@ export const projetos = [
         tecnologies:[iconTec.js, iconTec.html, iconTec.css, iconTec.git],
         linkProject: "https://camposleo95.github.io/Jogo-da-Velha/", 
         linkGitHub:"https://github.com/CamposLeo95/Jogo-da-Velha",
-        description: "Projeto criado para simular um jogo da velha, construido logo quando comecei o curso ProgramadorBR utilizei tecnologias mais basicas como JavaScript para introduzir a logica do jogo",
+        description: "Jogo da Velha construido utilizando as tecnologias basicas HTML, CSS e JavaScript. Projeto criado para pratica de logica de programação basica",
     },
 
     {
@@ -94,7 +94,7 @@ export const projetos = [
         tecnologies:[iconTec.js, iconTec.html, iconTec.css, iconTec.git],
         linkProject: "https://camposleo95.github.io/Projeto-previsao-tempo/", 
         linkGitHub:"https://github.com/CamposLeo95/Projeto-previsao-tempo",
-        description: "Este projeto consiste em uma aplicação que consome uma API de previsão do tempo para apresentar informações atualizadas sobre as condições climáticas. A construção da aplicação foi baseada em um curso intensivo sob a orientação do Rodolfo Mori, do DevClub. ",
+        description: "Projeto criado para consumo de uma API de previsão do tempo utilizando fetch para fazer a requisição com o Back-End ",
     },
 
     {
@@ -104,6 +104,6 @@ export const projetos = [
         tecnologies:[iconTec.js, iconTec.html, iconTec.css, iconTec.git],
         linkProject: "https://camposleo95.github.io/Projeto-Churrascometro/", 
         linkGitHub:"https://github.com/CamposLeo95/Projeto-Churrascometro",
-        description: "Durante meus primeiros estudos em desenvolvimento web no curso ProgramadorBR, criei um projeto simples que consiste em simular a quantidade de itens necessários para realizar um churrasco, com base no número de pessoas e tempo de duração do evento.",
+        description: "Projeto simples que consiste em simular a quantidade de itens necessários para realizar um churrasco, com base no número de pessoas e tempo de duração do evento. Feito para treinar logica de programação",
     },
 ]

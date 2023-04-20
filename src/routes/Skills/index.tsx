@@ -49,12 +49,14 @@ export default function Skills(){
     return(
         <MainContainer> 
             <SecondContainer color={linguagens[idImg].color}>
-                <Carrossel 
-                    idImg={idImg} 
-                    handleBtnNext={handleBtnNext} 
-                    handleBtnPrev={handleBtnPrev}
-                />
-                <CardText settings={settingsTxt}/>    
+                <div className="sliderCard">
+                    <Carrossel 
+                        idImg={idImg} 
+                        handleBtnNext={handleBtnNext} 
+                        handleBtnPrev={handleBtnPrev}
+                    />
+                </div>
+                <CardText settings={settingsTxt} /> 
             </SecondContainer>
         </MainContainer>
         

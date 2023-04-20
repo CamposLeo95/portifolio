@@ -5,7 +5,7 @@ interface ArrowButtonProps {
  }
 
 export const Container = styled.div`
-    width: 30%;
+    width: 100%;
     height: 100%;
     padding: 20px;
     display: flex;
@@ -27,18 +27,27 @@ export const CardSkills = styled.div`
     justify-content: center;
     align-items: center;
     position: relative;
-    animation: remix 2s linear infinite, startedBottom 1.5s;;
-
+    animation: remix 2s linear infinite, startedBottom 1.5s;
+   
     img{
       width: 150px;
     }
 
-    @media (max-height: 880px) {
+    @media (max-width: 880px) {
       margin-top: 40px;
       height: 40%;
 
       & img{
-         width: 110px;
+         width: 100px;
+      }
+    }
+
+    @media (max-height: 500px) {
+      margin-top: 40px;
+      height: 40%;
+
+      & img{
+         width:110px;
       }
     }
 
@@ -49,7 +58,7 @@ export const CardSkills = styled.div`
     cursor: pointer;
     rotate: ${ ({side}) => side ? "0deg": "180deg"};
     opacity:.5;
-    background-color: transparent;
+    background-color:transparent;
     border: none;
 
    
@@ -61,7 +70,7 @@ export const CardSkills = styled.div`
 
  
     & i{
-       color: #757575;
+       color: #ffffff;
        font-size: 5rem;
     }
 

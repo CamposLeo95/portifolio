@@ -47,7 +47,7 @@ export const CardPhoto = styled.div`
         
     }
 
-    @media (max-width: 1150px) {
+    @media (max-width: 700px) {
         height: 50%;
         & div{
             height: 150px;

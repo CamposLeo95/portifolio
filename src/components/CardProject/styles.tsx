@@ -88,6 +88,7 @@ export const Wrapper = styled.div`
     }
 
     & .content{
+        text-align: center;
         width: 100%;
         height: 50%;
         color: #fff;
