@@ -63,12 +63,22 @@ export const projetos = [
         title: "Portfolio",
         tecnologies:[iconTec.ts, iconTec.react, iconTec.html, iconTec.css, iconTec.styled ],
         linkProject: "./", 
-        linkGitHub:"https://github.com/CamposLeo95/Todo-React-Ts",
+        linkGitHub:"https://github.com/CamposLeo95/Portifolio",
         description: "Portfólio criado utilizando React, TypeScript e Styled-Components para demonstrar meu perfil e apresentar as tecnologias e projetos feitos.",
+    },
+
+    {
+        id: 1,
+        nameImage: iconTec.css,
+        title: "Pokedex",
+        tecnologies:[ iconTec.react, iconTec.html, iconTec.css, iconTec.styled ],
+        linkProject: "https://projeto-pokedex-sand.vercel.app/", 
+        linkGitHub:"https://github.com/CamposLeo95/projeto_pokedex",
+        description: "Aplicação desenvolvida em React, consumindo a API da PokeAPI com o Axios para obter os dados dos através de requisições GET e exibi-los na página inicial. Com redirecionamento de rotas feito em react-router-dom",
     },
     
     {
-        id: 1,
+        id: 2,
         nameImage: iconTec.css,
         title: "Todo List",
         tecnologies:[iconTec.ts, iconTec.react, iconTec.html, iconTec.css, ],
@@ -78,7 +88,7 @@ export const projetos = [
     },
 
     {
-        id: 2,
+        id: 3,
         title: "Jogo da velha",
         nameImage: iconTec.css,
         tecnologies:[iconTec.js, iconTec.html, iconTec.css, iconTec.git],
@@ -88,7 +98,7 @@ export const projetos = [
     },
 
     {
-        id: 3,
+        id: 4,
         title: "Previsão do tempo",
         nameImage: iconTec.js,
         tecnologies:[iconTec.js, iconTec.html, iconTec.css, iconTec.git],
@@ -98,7 +108,7 @@ export const projetos = [
     },
 
     {
-        id: 4,
+        id: 5,
         title: "Churrascometro",
         nameImage: iconTec.js,
         tecnologies:[iconTec.js, iconTec.html, iconTec.css, iconTec.git],
