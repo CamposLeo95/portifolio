@@ -6,7 +6,7 @@ import CardText from '../../components/CardText'
 import MainContainer from '../../components/MainContainer'
 
 //Images
-import Self from '../../assets/img/self.jpg'
+import prog from '../../assets/img/prog.png'
 
 // Data
 import { resumo } from '../../assets/Data/data'
@@ -34,7 +34,7 @@ export default function Home(){
                 <CardText  settings={settings}/>       
                 <CardPhoto>
                     <div>
-                        <img src={Self} />
+                        <img src={prog} />
                     </div>
                 </CardPhoto>      
             </SecondContainer>

@@ -30,16 +30,12 @@ export const CardPhoto = styled.div`
     animation: startedRight 2s;
 
     & div{
-        min-width:250px;
         height: 350px;
-        border-radius: 50%;
         overflow: hidden;
-        border: 5px solid white;
-        box-shadow: 1px 1px 10px black;
         position: relative;
 
         & img{
-            width: 350px;
+            width: 500px;
             position: relative;
             top: -40px;
             right: 8px;
@@ -51,7 +47,7 @@ export const CardPhoto = styled.div`
         height: 50%;
         & div{
             height: 150px;
-            min-width: 150px;
+            min-width: 250px;
             bottom: 25px;
 
             & img{
@@ -71,7 +67,7 @@ export const CardPhoto = styled.div`
             bottom: 25px;
 
             & img{
-            min-width: 150px;
+            min-width: 250px;
             position: relative;
             top: -30px;
             right: 0px;
