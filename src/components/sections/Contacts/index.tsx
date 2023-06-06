@@ -4,9 +4,6 @@ import { useState } from "react"
 // Styled-Components
 import { SecondContainer, CardForm, Form } from "./styles"
 
-// Components
-import MainContainer from '../../components/MainContainer'
-
 // EmailJs
 import emailjs from "@emailjs/browser"
 
@@ -44,9 +41,8 @@ export default function Contacts(){
         })
         
     }
-
     return(
-        <MainContainer>
+
             <SecondContainer>
                 <CardForm>
                     <h1> Contato </h1>
@@ -88,8 +84,6 @@ export default function Contacts(){
                         </a>   
                     </div>
                 </CardForm>
-            </SecondContainer>
-        </MainContainer>
-        
+            </SecondContainer>        
     )
 }

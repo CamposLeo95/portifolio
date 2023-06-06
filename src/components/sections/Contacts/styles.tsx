@@ -2,10 +2,10 @@ import styled from "styled-components";
 
 export const SecondContainer = styled.div`
     width: 100%;
-    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color:green;
 `
 export const CardForm = styled.div`
     width: 95%; 

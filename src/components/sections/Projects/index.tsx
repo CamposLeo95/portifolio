@@ -1,17 +1,14 @@
 // Styled- Components
 import { SecondContainer } from "./styles"
 
-//Hooks
-
 // Components
-import MainContainer from "../../components/MainContainer"
-import CardProject from "../../components/CardProject"
+import CardProject from "../../../components/CardProject"
 
 //Data
-import { projetos } from "../../assets/Data/data"
+import { projetos } from "../../../assets/Data/data"
 
 //Slider
-import Slider from "../../components/Slider"
+import Slider from "../../../components/Slider"
 import { SwiperSlide } from "swiper/react"
 
 export default function Projects(){
@@ -20,12 +17,11 @@ export default function Projects(){
 
     const settings = {
         spaceBetween: (media > 795) ? 10 : 100,
-        slidesPerView: (media > 750) ? 2 : 1,
+        slidesPerView: (media > 750) ? 3 : 1,
         pagination:{ clickable: true }
         }
 
     return(
-        <MainContainer>
             <SecondContainer>   
                 <Slider settings={settings}>
                     {projetos.map((projeto) =>(
@@ -34,9 +30,7 @@ export default function Projects(){
                     </SwiperSlide>
                     ))}
                 </Slider>
-            </SecondContainer>
-        </MainContainer>
-        
+            </SecondContainer>   
     )
 }
 

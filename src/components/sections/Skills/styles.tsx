@@ -1,12 +1,9 @@
 import styled from "styled-components";
 
-interface SecondContainerProps{
-    color: string
-}
 
-export const SecondContainer = styled.div<SecondContainerProps>`
+
+export const SecondContainer = styled.div`
     width: 100%;
-    height: 100%;
     display: flex;
     flex-direction:column;
     justify-content: center;
@@ -30,7 +27,7 @@ export const SecondContainer = styled.div<SecondContainerProps>`
         margin-top: 20px;
         font-size: 4rem;
         font-weight: bold;
-        color: ${({ color }) => color };
+        color:#fff;
     }
 
     @media (max-width: 1150px){

@@ -1,18 +1,5 @@
 // ----------------------------------
 
-export const resumo = [
-    {
-        id: 0,
-        topText:" Olá, eu sou...",
-        title: "Leonardo Campos",
-        subtitle:"Desenvolvedor Front End",
-        mainText: "Estou em transição de carreira para a área de desenvolvimento de software. No momento, atuo como freelancer criando projetos para praticar e aprimorar meus conhecimentos, mas disposto a entrar para um time de tecnologia.", 
-        color:"#06c6e7"
-    },
-]
-
-// ----------------------------------
-
 export const linguagens = [
     {
         id: 0,
