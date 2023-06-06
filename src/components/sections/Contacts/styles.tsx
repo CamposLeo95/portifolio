@@ -50,23 +50,28 @@ export const CardForm = styled.div`
         color: #fff;
 
         & h3{
-            font-size:var(--font-header-dois)
+            font-size:var(--font-header-um);
+            font-family: var(--font-family-secundaria);
         }
 
         & p{
-            font-size:var(--font-texto-um)
+            font-size:var(--font-texto-um);
         }
     }
 
 
 
     @media (min-width: 815px) {
+
         flex-direction:row;
+
+        & .descricao{
+            width: 40%;
+        }
 
         & .redes{
             display:flex;
             gap: 30px;
-            background-color:green
         }
     }
 
@@ -120,6 +125,10 @@ export const Form = styled.form`
         background-color:#fff;
         color:var(--cor-azul-claro);
         border: 1.5px solid var(--cor-azul-escuro);
+    }
+
+    @media (min-width: 815px) {
+        width: 45%;
     }
 
 `

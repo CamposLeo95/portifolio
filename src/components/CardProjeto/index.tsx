@@ -28,7 +28,7 @@ export default function CardProjeto({dataProjeto}:CardProjetoProps) {
                 ))}
             </div>
             <div className="controles">
-                <a href={dataProjeto.linkProject}>Ver Projeto</a>
+                <a href={dataProjeto.linkProject}>Projeto</a>
                 <a href={dataProjeto.linkGitHub}>GitHub</a>
             </div>
         </div>
