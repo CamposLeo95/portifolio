@@ -1,36 +1,21 @@
-// Styled- Components
-import { SecondContainer } from "./styles"
-
-// Components
-import CardProject from "../../../components/CardProject"
-
-//Data
 import { projetos } from "../../../assets/Data/data"
 
-//Slider
-import Slider from "../../../components/Slider"
-import { SwiperSlide } from "swiper/react"
+import { SecondContainer } from "./styles"
+import CardProjeto from "../../CardProjeto"
 
 export default function Projects(){
-
-    const media = window.screen.width
-
-    const settings = {
-        spaceBetween: (media > 795) ? 10 : 100,
-        slidesPerView: (media > 750) ? 3 : 1,
-        pagination:{ clickable: true }
-        }
-
     return(
-            <SecondContainer>   
-                <Slider settings={settings}>
-                    {projetos.map((projeto) =>(
-                    <SwiperSlide key={projeto.id}>
-                        <CardProject datas={projetos[projeto.id]}/>
-                    </SwiperSlide>
-                    ))}
-                </Slider>
-            </SecondContainer>   
+            <SecondContainer>
+                <div className="card-projetos">
+                <h2>
+                    <span>Meus, </span>
+                    <span className="span-about-two">Projetos</span>
+                </h2>
+                {projetos.map((projeto) => (
+                    <CardProjeto dataProjeto={projeto}/>
+                ))}                           
+                </div>
+            </SecondContainer>
     )
 }
 

@@ -11,3 +11,34 @@ import git from '../img/icons/git.png'
 export const iconTec = {
     css, js, html, react, node, ts, styled, git
 }
+
+export const iconTecArray = [
+    {
+        name: "React",
+        img: react
+    },
+    {
+        name: "TypeScript",
+        img: ts
+    },
+    {
+        name: "NodeJS",
+        img: node
+    },
+    {
+        name: "JavaScript",
+        img: js
+    },
+    {
+        name: "HTML",
+        img: html
+    },
+    {
+        name: "CSS",
+        img: css
+    },
+    {
+        name: "GIT",
+        img: git
+    },
+]

@@ -3,11 +3,11 @@ import styled from 'styled-components'
 export const MainContainer = styled.section`
     width: 100%;
     align-items: center;
-    color: white;
-    background-image: linear-gradient(90deg, #000,#01011f);
+    color: #fff;
+    background-image: linear-gradient(45deg, #000,#000, #004666);
     font-size: 1.5rem;
     padding: 30px 0; 
-    border-radius: 0px 0px 150px 0;
+    border-radius: 0px 0px 50px 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -21,17 +21,17 @@ export const MainContainer = styled.section`
     }
 
     & .span-title-one{
-        font-family: 'Caveat', cursive;
+        font-family: var(--font-family-secundaria);
         display: block;
         margin: 8px 0;
     }
 
     & span{
-        font-size: 3rem;
+        font-size: var(--font-header-um);
     }
 
     & .span-title-three{ 
-        color: #0d8df5;
+        color: var(--cor-azul-claro);
         font-weight: 400;
     }
 
@@ -43,7 +43,7 @@ export const MainContainer = styled.section`
         margin: 10px 0;
 
         & i{
-            font-size: 2.4rem;
+            font-size: var(--font-header-dois);
             color: #fff;
         }
     }
@@ -54,12 +54,12 @@ export const MainContainer = styled.section`
     }
 
     & p {
-        color: #a0a0a0;
+        color: var(--cor-cinza-claro);
         margin: 30px 0;
     }
 
     @media (min-width: 760px) {
-        border-radius: 0px 0px 270px 0;
+        border-radius: 0px 0px 60px 60px;
         padding: 60px 0; 
         
         & span{
@@ -69,7 +69,6 @@ export const MainContainer = styled.section`
         & .banner {
         width: 80%;
         align-items: start;
-        /* background-color: green; */
         }
 
         & h2, p{
@@ -88,7 +87,7 @@ export const MainContainer = styled.section`
         gap: 20px;
 
         & i{
-            font-size: 2.8rem;
+            font-size: var(--font-header-dois);
             color: #fff;
         }
     }

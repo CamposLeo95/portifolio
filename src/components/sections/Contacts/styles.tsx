@@ -5,22 +5,20 @@ export const SecondContainer = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color:green;
+    background-color:var(--cor-azul-claro);
+    padding: 20px;
 `
 export const CardForm = styled.div`
-    width: 95%; 
-    min-width:320px;
-    max-width: 700px;
-    height: 80%;
-    background:#0c0c0cc8;
+    width: 100%; 
+    padding: 20px;
     display: flex;
-    flex-direction: column;
+    flex-direction:column;
     align-items: center;
     justify-content: space-around;
     border-radius: 10px;
-    box-shadow: 2px 2px 10px #000000;
     animation: startedLeft 2s;
     position: relative;
+    gap: 20px;
 
     & h1{
         font-size: 4rem;
@@ -44,12 +42,32 @@ export const CardForm = styled.div`
         }
     }
 
-    @media (max-width: 1050px) {
-        height: 70%;
+    & .descricao{
+        display:flex;
+        flex-direction:column;
+        gap: 20px;
+        text-align:center;
+
+        & h3{
+            font-size:var(--font-header-dois)
+        }
     }
+
+
+
+    @media (min-width: 815px) {
+        flex-direction:row;
+
+        & .redes{
+            display:flex;
+            gap: 30px;
+            background-color:green
+        }
+    }
+
 `
 export const Form = styled.form`
-    width: 90%;
+    width: 100%;
     height: 60%;
     display: flex;
     flex-direction: column;
@@ -62,7 +80,6 @@ export const Form = styled.form`
         border-radius: 3px;
         font-size: 1.8rem;
         background: #faf6f6dd;
-        box-shadow:2px 2px 10px #000000;
         color: #2c2c2c;
     }
 
@@ -76,27 +93,26 @@ export const Form = styled.form`
         font-size: 1.8rem;
         background: #faf6f6dd;
         color: #2c2c2c;
-        box-shadow:2px 2px 10px #000000;
     }
 
     & button{
         padding: 8px;
+        width: 150px;
         cursor: pointer;
         background: transparent;
         border: 1.5px solid #fff;
         border-radius: 5px;
-        color: white;
-        font-size: 2rem;
-        box-shadow: 0px 0px 10px #ffffff;
-        
+        color: #fff;
+        font-size: var(--font-header-dois);  
+        font-weight: 600;
+        font-family: var(--font-family-secundaria)
     }
 
     & button:hover{
-        border: 1px solid #ffffff;
-        box-shadow: 0px 0px 25px #ffffff;
-        color:#ffffff;
-        text-shadow:1px 1px 40px #ffffff;
-        /* color:#008cff; */
+        border: 1px solid #fff;
+        background-color:#fff;
+        color:var(--cor-azul-claro);
+        border: 1.5px solid var(--cor-azul-escuro);
     }
 
 `

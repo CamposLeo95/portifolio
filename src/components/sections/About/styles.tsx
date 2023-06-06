@@ -4,16 +4,29 @@ export const MainContainer = styled.section`
     width: 100vw;
     display: flex;
     justify-content: center;
+    gap: 50px;
     font-size: 1.6rem;
     padding: 20px 0; 
 
     & h2{
-        color: #0d8df5; 
-        font-size: 3.2rem;   
+        color: var(--cor-azul-claro); 
+        font-size: var(--font-header-um); 
     }
 
     & .span-about-two{
-        font-family: 'Caveat', cursive;
+        font-family: var(--font-family-secundaria);
+    }
+
+    & .span-citacao-frase{
+        color: var(--cor-cinza-claro);
+        font-style: italic;
+        display:block;
+    }
+
+    & .span-citacao-criador{
+        font-weight:bold;
+        font-family: var(--font-family-secundaria);
+        font-size: 2rem;
     }
 
     & .about{
@@ -22,38 +35,40 @@ export const MainContainer = styled.section`
         flex-direction: column;
         align-items: center;
         text-align: center;
-        margin-top:20px;
-        gap: 10px;
+        margin-top: 10px;
+        gap: 5px;
     }
 
     & .card-about{
-        margin-top: 20px;
+        margin-top:5px;
+        padding:50px 10px;
+        gap: 30px;
+        border-radius: 3px;
+        border-top: var(--borda-top);
         display: flex;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
-        padding:20px 10px;
-        border-radius: 10px;
-        background-color: #ebeaea;
-
 
         & .card-descricao{
-            width: 90%;
             display: flex;
-            justify-content: center;
-
+            flex-direction:column;
+            width: 80%;
+            gap:10px;
         }
 
-        & img{
-            width: 250px;
-            border-radius: 10px;
+        & .texto-distaque{
+            font-weight: 600;
+
         }
     }
 
     @media (min-width: 760px) {
 
-        margin-top:50px;     
+        margin-top:50px;  
+
         & .card-about{
-        margin: 70px 0;
+        margin: 20px 0;
         display: flex;
         flex-direction: row;
         gap: 50px;
@@ -62,7 +77,11 @@ export const MainContainer = styled.section`
 
         & img{
             width: 250px;
-            border-radius: 10px;
+        }
+
+        & .card-descricao{
+            text-align:start;
+            width: 50%;
         }
     }
 

@@ -19,7 +19,7 @@ export default function Contacts(){
             alert('Preencha todos os campos')
             return
         }
-
+        
         const templateParams = {
             from_name:name,
             email: email,
@@ -45,7 +45,6 @@ export default function Contacts(){
 
             <SecondContainer>
                 <CardForm>
-                    <h1> Contato </h1>
                     <Form onSubmit={sendEmail}>
 
                         <input 
@@ -69,19 +68,28 @@ export default function Contacts(){
                             onChange={(e)=> setMessage(e.target.value)}
                             value={message}
                         />
-        
+                        <div>
+
                         <button type="submit">Enviar</button>
+                        </div>
                     </Form>
-                    <div>
-                        <a href="https://www.linkedin.com/in/leonardo-a-campos/" target="_blank">
-                            <i className="bi bi-linkedin" />
-                        </a>
-                        <a href="https://wa.me/5511958639720" target="_blank">
-                            <i className="bi bi-whatsapp" />
-                        </a>
-                        <a href="https://github.com/CamposLeo95" target="_blank">
-                        <i className="bi bi-github" />
-                        </a>   
+                    <div className="descricao">
+                        <h3>Envie uma Mensagem</h3>
+                        <p>
+                            Fique a vontade para entrar em contato comigo atraves de umas das minhas redes sociais ou me enviando um e-mail preenchendo os campos ao lado
+                        </p>
+
+                        <div className="redes">
+                            <a href="https://www.linkedin.com/in/leonardo-a-campos/" target="_blank">
+                                <i className="bi bi-linkedin" />
+                            </a>
+                            <a href="https://wa.me/5511958639720" target="_blank">
+                                <i className="bi bi-whatsapp" />
+                            </a>
+                            <a href="https://github.com/CamposLeo95" target="_blank">
+                            <i className="bi bi-github" />
+                            </a>   
+                        </div>
                     </div>
                 </CardForm>
             </SecondContainer>        

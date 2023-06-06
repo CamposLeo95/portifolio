@@ -1,16 +1,42 @@
 import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
+    :root{
+
+        //Font-Sizes
+        --font-header-um: 4.2rem;
+        --font-header-dois: 2.4rem;
+        --font-texto-um: 1.6rem;
+
+        //Fonts-Family
+        --font-family-principal: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        --font-family-secundaria: 'Caveat', cursive;
+
+        //Colors
+        --cor-azul-escuro: #080077; 
+        --cor-azul-claro: #0d8df5; 
+        --cor-cinza-claro: #838383; 
+
+        //Borders
+        --borda-top: 1px solid #81818188;
+
+        
+    }
+
     *{
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-        font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-family: var(--font-family-principal);
         text-decoration: none;
     }
 
     html{
         font-size: 62.5%;
+    }
+
+    body{
+        background-color: #f5f5f5;
     }
 
 // KEYFRAMES -----------------------------------
@@ -104,5 +130,22 @@ export const GlobalStyle = createGlobalStyle`
       }
 
    }
+// SWIPER CONFIG
+   .swiper{
+    padding: 32px;
+    cursor:grab;
+    }
+
+    .swiper-slide{
+        display: flex;
+        justify-content: center;
+    }
+
+    .swiper-pagination-bullet-active {
+        background-color: var(--cor-azul-claro);
+        width: 10px;
+        height: 10px;
+        box-shadow: 0px 0px 8px var(--cor-azul-claro);
+    }
 
 `
