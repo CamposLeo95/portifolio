@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
-interface ContainerProjetoProps{
-    id: number,
+interface ContainerProjetoProps {
+    id: any,
 }
 
 export const ContainerProjeto = styled.div<ContainerProjetoProps>`
@@ -61,7 +61,7 @@ export const ContainerProjeto = styled.div<ContainerProjetoProps>`
         }
 
         @media (min-width: 815px) {
-            flex-direction: ${props => (props.id % 2) === 0 ?"row" : "row-reverse"}
+            flex-direction: ${props => (props.id % 2) === 0 ? "row" : "row-reverse"}
         }
 
 `

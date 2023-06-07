@@ -1,6 +1,5 @@
 import CardImg from "../CardImg";
 import { ContainerProjeto } from "./styles";
-import perfil from '../../assets/img/perfil.png'
 
 interface CardProjetoProps {
     dataProjeto: {
