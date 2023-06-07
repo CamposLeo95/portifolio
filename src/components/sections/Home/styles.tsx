@@ -59,7 +59,7 @@ export const MainContainer = styled.section`
     }
 
     @media (min-width: 760px) {
-        border-radius: 0px 0px 60px 60px;
+        border-radius: 0px 0px 200px 0px;
         padding: 60px 0; 
         
         & span{

@@ -12,7 +12,7 @@ export const CardForm = styled.div`
     width: 100%; 
     padding: 20px;
     display: flex;
-    flex-direction:column;
+    flex-direction:column-reverse;
     align-items: center;
     justify-content: space-around;
     border-radius: 10px;

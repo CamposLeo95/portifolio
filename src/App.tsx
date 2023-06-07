@@ -4,16 +4,19 @@ import Skills from "./components/sections/Skills"
 import Contacts from "./components/sections/Contacts"
 import About from "./components/sections/About"
 
+import light from "./theme/light"
+import { ThemeProvider } from "styled-components"
+
 function App() {
 
   return (
-    <>
-      <Home/>
-      <About/>
-      <Skills/>
-      <Projects/>
-      <Contacts /> 
-    </>
+    <ThemeProvider theme={light}>
+      <Home />
+      <About />
+      <Skills />
+      <Projects />
+      <Contacts />
+    </ThemeProvider>
 
   )
 }

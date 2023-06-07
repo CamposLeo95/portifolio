@@ -8,44 +8,44 @@ import { iconTecArray } from "../../../assets/Data/images";
 import SliderImg from "../../SliderImg";
 import CardSkill from "../../CardSkill";
 
-export default function Skills(){
+export default function Skills() {
     const skills = [
         {
-            icon: <RiComputerLine/>,
+            icon: <RiComputerLine />,
             title: "Landing Pages",
-            content: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam provident veniam esse a neque velit temporibus maiores, molestiae asperiores. Maiores architecto cum deserunt esse enim officiis dicta labore cumque sed?"
+            content: "Criação de landing pages responsivas utilizando ferramentas que tragam uma melhor experiência para o usuário e mais engajamento."
         },
         {
-            icon: <RiComputerLine/>,
+            icon: <RiComputerLine />,
             title: "Aplicações Web",
-            content: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam provident veniam esse a neque velit temporibus maiores, molestiae asperiores. Maiores architecto cum deserunt esse enim officiis dicta labore cumque sed?"
+            content: "Crio sistemas Web que tornam a vida do usuário mais fácil utilizando as principais ferramentas do mercado. Com o objetivo de entregar soluções que tenham desde simples funcionalidades, até sistemas mais complexos e robustos"
         },
         {
-            icon: <RiComputerLine/>,
+            icon: <RiComputerLine />,
             title: "Back End",
-            content: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam provident veniam esse a neque velit temporibus maiores, molestiae asperiores. Maiores architecto cum deserunt esse enim officiis dicta labore cumque sed?"
+            content: "Desenvolvimento de um sistema backend que entregue rotas funcionais a uma aplicação utilizando NodeJS, Banco de Dados SQL e noSQL"
         },
     ]
 
-  return (
-  <>
-    <SecondContainer>
-        <div className='texto-principal'>
-            <h2>
-                <span className="span-about-one">Meus, </span>
-                <span className="span-about-two">Serviços</span>
-            </h2>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ducimus iste neque excepturi velit beatae suscipit sapiente, debitis inventore nisi sed aliquid modi magnam qui repudiandae doloribus rem optio amet!
-            </p>
-        </div>
-        <div className="container-card-skill">
-            {skills.map((skill) => (
-                <CardSkill icon={skill.icon} title={skill.title} content={skill.content} />
-            ))}         
-        </div> 
-    </SecondContainer>
-    <SliderImg iconTecArray={iconTecArray}/>
-</>
-  );
+    return (
+        <>
+            <SecondContainer>
+                <div className='texto-principal'>
+                    <h2>
+                        <span className="span-about-one">Meus, </span>
+                        <span className="span-about-two">Serviços</span>
+                    </h2>
+                    <p>
+                        Hoje conto com um bom conhecimento em um conjunto de ferramentas que são muito utilizadas no mercado e isso me permite desenvolver soluções de uma forma mais ágil, aqui estão alguns dos meus serviços.
+                    </p>
+                </div>
+                <div className="container-card-skill">
+                    {skills.map((skill) => (
+                        <CardSkill icon={skill.icon} title={skill.title} content={skill.content} />
+                    ))}
+                </div>
+            </SecondContainer>
+            <SliderImg iconTecArray={iconTecArray} />
+        </>
+    );
 };

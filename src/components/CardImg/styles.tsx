@@ -1,8 +1,9 @@
 import styled from "styled-components"
+import light from "../../theme/light"
 
 export const CardImagem = styled.div`
         position: relative;
-        border:3px solid var(--cor-azul-claro);
+        border:3px solid ${light.colors.primary};
         border-radius: 3px;
 
         & img{

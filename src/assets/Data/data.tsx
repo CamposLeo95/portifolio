@@ -4,8 +4,8 @@ export const linguagens = [
     {
         id: 0,
         title: "JavaScript",
-        mainText: "JavaScript é uma linguagem de programação utilizada para criar interatividade em páginas web e aplicativos. Ela permite a criação de animações, jogos e formulários interativos, entre outros recursos dinâmicos. É versátil e pode ser utilizado tanto no lado do cliente quanto do servidor.", 
-        color:"#dfb600"
+        mainText: "JavaScript é uma linguagem de programação utilizada para criar interatividade em páginas web e aplicativos. Ela permite a criação de animações, jogos e formulários interativos, entre outros recursos dinâmicos. É versátil e pode ser utilizado tanto no lado do cliente quanto do servidor.",
+        color: "#dfb600"
     },
     {
         id: 1,
@@ -43,64 +43,71 @@ export const linguagens = [
 
 import { iconTec } from "./images"
 
+import churras from "../img/churrascometro.png"
+import previsao from "../img/previsao.png"
+import velha from "../img/velha.png"
+import todo from "../img/todo.png"
+import poke from "../img/poke.png"
+import port from "../img/port.png"
+
 export const projetos = [
     {
         id: 0,
-        nameImage: iconTec.css,
+        image: port,
         title: "Portfolio",
-        tecnologies:[iconTec.ts, iconTec.react, iconTec.html, iconTec.css, iconTec.git ],
-        linkProject: "./", 
-        linkGitHub:"https://github.com/CamposLeo95/Portifolio",
+        tecnologies: [iconTec.ts, iconTec.react, iconTec.html, iconTec.css, iconTec.git],
+        linkProject: "./",
+        linkGitHub: "https://github.com/CamposLeo95/Portifolio",
         description: "Portfólio criado utilizando React, TypeScript e Styled-Components para demonstrar meu perfil e apresentar as tecnologias e projetos feitos.",
     },
 
     {
         id: 1,
-        nameImage: iconTec.css,
+        image: poke,
         title: "Pokedex",
-        tecnologies:[ iconTec.react, iconTec.html, iconTec.css, iconTec.git ],
-        linkProject: "https://projeto-pokedex-sand.vercel.app/", 
-        linkGitHub:"https://github.com/CamposLeo95/projeto_pokedex",
+        tecnologies: [iconTec.react, iconTec.html, iconTec.css, iconTec.git],
+        linkProject: "https://projeto-pokedex-sand.vercel.app/",
+        linkGitHub: "https://github.com/CamposLeo95/projeto_pokedex",
         description: "Aplicação desenvolvida em React, consumindo a API da PokeAPI com o Axios para obter os dados dos através de requisições GET e exibi-los na página inicial. Com redirecionamento de rotas feito em react-router-dom",
     },
-    
+
     {
         id: 2,
-        nameImage: iconTec.css,
+        image: todo,
         title: "Todo List",
-        tecnologies:[iconTec.ts, iconTec.react, iconTec.html, iconTec.css, iconTec.git],
-        linkProject: "https://todo-react-ts-ivory.vercel.app/", 
-        linkGitHub:"https://github.com/CamposLeo95/Todo-React-Ts",
+        tecnologies: [iconTec.ts, iconTec.react, iconTec.html, iconTec.css, iconTec.git],
+        linkProject: "https://todo-react-ts-ivory.vercel.app/",
+        linkGitHub: "https://github.com/CamposLeo95/Todo-React-Ts",
         description: "Projeto TodoList, feito com a orientação de Matheus Battisti, do Hora de Codar, utilizando TypeScript e React. O projeto consiste em uma lista de tarefas em que é possível registrar, editar e excluir tarefas conforme necessário. ",
     },
 
     {
         id: 3,
         title: "Jogo da velha",
-        nameImage: iconTec.css,
-        tecnologies:[iconTec.js, iconTec.html, iconTec.css, iconTec.git],
-        linkProject: "https://camposleo95.github.io/Jogo-da-Velha/", 
-        linkGitHub:"https://github.com/CamposLeo95/Jogo-da-Velha",
+        image: velha,
+        tecnologies: [iconTec.js, iconTec.html, iconTec.css, iconTec.git],
+        linkProject: "https://camposleo95.github.io/Jogo-da-Velha/",
+        linkGitHub: "https://github.com/CamposLeo95/Jogo-da-Velha",
         description: "Jogo da Velha construido utilizando as tecnologias basicas HTML, CSS e JavaScript. Projeto criado para pratica de logica de programação basica",
     },
 
     {
         id: 4,
         title: "Previsão do tempo",
-        nameImage: iconTec.js,
-        tecnologies:[iconTec.js, iconTec.html, iconTec.css, iconTec.git],
-        linkProject: "https://camposleo95.github.io/Projeto-previsao-tempo/", 
-        linkGitHub:"https://github.com/CamposLeo95/Projeto-previsao-tempo",
+        image: previsao,
+        tecnologies: [iconTec.js, iconTec.html, iconTec.css, iconTec.git],
+        linkProject: "https://camposleo95.github.io/Projeto-previsao-tempo/",
+        linkGitHub: "https://github.com/CamposLeo95/Projeto-previsao-tempo",
         description: "Projeto criado para consumo de uma API de previsão do tempo utilizando fetch para fazer a requisição com o Back-End ",
     },
 
     {
         id: 5,
         title: "Churrascometro",
-        nameImage: iconTec.js,
-        tecnologies:[iconTec.js, iconTec.html, iconTec.css, iconTec.git],
-        linkProject: "https://camposleo95.github.io/Projeto-Churrascometro/", 
-        linkGitHub:"https://github.com/CamposLeo95/Projeto-Churrascometro",
+        image: churras,
+        tecnologies: [iconTec.js, iconTec.html, iconTec.css, iconTec.git],
+        linkProject: "https://camposleo95.github.io/Projeto-Churrascometro/",
+        linkGitHub: "https://github.com/CamposLeo95/Projeto-Churrascometro",
         description: "Projeto simples que consiste em simular a quantidade de itens necessários para realizar um churrasco, com base no número de pessoas e tempo de duração do evento. Feito para treinar logica de programação",
     },
 ]
