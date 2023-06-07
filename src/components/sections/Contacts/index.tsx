@@ -11,10 +11,14 @@ export default function Contacts() {
     const [name, setName] = useState<string>('')
     const [email, setEmail] = useState<string>('')
     const [message, setMessage] = useState<string>('')
+    const [isLoading, setIsLoading] = useState<boolean>(false)
 
 
     const sendEmail = (e: React.FormEvent) => {
         e.preventDefault()
+
+        setIsLoading(true)
+
         if (name === '' || email === '' || message === '') {
             alert('Preencha todos os campos')
             return
@@ -32,7 +36,7 @@ export default function Contacts() {
             templateParams,
             'jYluPEAoagLYTi8LZ'
         ).then((res) => {
-            console.log('Email enviado', res.status, res.text);
+            setIsLoading(false)
             setName('')
             setEmail('')
             setMessage('')
@@ -68,7 +72,15 @@ export default function Contacts() {
                         value={message}
                     />
                     <div>
-                        <button type="submit">Enviar</button>
+                        {
+                            isLoading
+                                ? <button type="submit" style={{
+                                    background: "#027502",
+                                    color: "#fff",
+                                    border: "none"
+                                }}>Enviando...</button>
+                                : <button type="submit">Enviar</button>
+                        }
                     </div>
                 </Form>
                 <div className="descricao">
