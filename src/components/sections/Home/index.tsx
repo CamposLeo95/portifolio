@@ -1,6 +1,24 @@
+import { useEffect, useState } from "react"
 import { MainContainer } from "./styles"
 
 export default function Home() {
+
+    const [subtitle, setSubtitle] = useState<string>('')
+    const originalSubtitle = "Desenvolvedor React Front-End"
+
+    const write = () => {
+        const arraySubtitle = originalSubtitle.split('')
+
+        arraySubtitle.forEach((letter, i) => {
+            setTimeout(() => {
+                setSubtitle(prev => prev + letter)
+            }, 100 * i)
+        })
+    }
+
+    useEffect(() => {
+        write()
+    }, [])
 
     return (
         <MainContainer>
@@ -13,7 +31,7 @@ export default function Home() {
                     </h1>
                 </div>
                 <div className='conteudo'>
-                    <h2>Desenvolvedor React Front-End</h2>
+                    <h2>{subtitle}</h2>
                     <p>
                         Sou um desenvolvedor front-end especializado em React, com uma paixão por criar interfaces dinâmicas e envolventes.
                     </p>
