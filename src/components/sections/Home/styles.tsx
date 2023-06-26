@@ -4,10 +4,9 @@ export const MainContainer = styled.section`
     width: 100%;
     align-items: center;
     color: #fff;
-    background-image: linear-gradient(45deg, #000,#000, #004666);
+    background-image: linear-gradient(45deg, #000,#05448d, #000);
     font-size: 1.5rem;
     padding: 30px 0; 
-    border-radius: 0px 0px 50px 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -59,7 +58,6 @@ export const MainContainer = styled.section`
     }
 
     @media (min-width: 760px) {
-        border-radius: 0px 0px 200px 0px;
         padding: 60px 0; 
         
         & span{
