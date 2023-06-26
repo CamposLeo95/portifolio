@@ -36,6 +36,7 @@ export const ContainerProjeto = styled.div<ContainerProjetoProps>`
             justify-content:center;
             gap: 15px;
             padding: 15px 0px;
+
         }
     
         & .controles{

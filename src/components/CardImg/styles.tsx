@@ -13,5 +13,12 @@ export const CardImagem = styled.div`
             bottom: 10px;
             border-radius: 3px;
             box-shadow: -8px 8px 10px black;
+            cursor: pointer;
+            transition: 0.3s ease-in-out;
+        }
+
+        & img:hover{
+            width: 255px;
+            bottom: 20px;
         }
 `
