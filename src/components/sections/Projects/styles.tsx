@@ -9,7 +9,7 @@ export const SecondContainer = styled.div`
     margin: 30px 0; 
 
     & .card-projetos{
-        width:90%;
+        width:100%;
         display: flex;
         flex-direction:column;
         align-items:center;
@@ -24,6 +24,14 @@ export const SecondContainer = styled.div`
 
     & .span-about-two{
         font-family: var(--font-family-secundaria);
+    }
+
+    & .container-cards-projeto{
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 15px;
     }
 
     @media (min-width: 815px) {

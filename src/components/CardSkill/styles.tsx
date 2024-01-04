@@ -12,11 +12,14 @@ export const SecondContainer = styled.section`
         background-color: var(--cor-azul-claro);
         max-width: 300px;
         min-width:250px;
-        height: 250px;
+        min-height: 280px;
         border-radius: 15px;
         color: #fff;
-        padding: 15px;
+        padding: 20px;
         font-size: var(--font-texto-um);
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
 
         & h2{
             color:#fff;

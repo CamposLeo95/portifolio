@@ -1,7 +1,7 @@
 // Styles
 import { SecondContainer } from "./styles"
 
-import { RiComputerLine } from "react-icons/ri"
+import { RiComputerLine, RiDatabase2Line, RiFileSettingsLine } from "react-icons/ri"
 
 import { iconTecArray } from "../../../assets/Data/images";
 
@@ -16,12 +16,12 @@ export default function Skills() {
             content: "Criação de landing pages responsivas utilizando ferramentas que tragam uma melhor experiência para o usuário e mais engajamento."
         },
         {
-            icon: <RiComputerLine />,
+            icon: <RiFileSettingsLine />,
             title: "Aplicações Web",
             content: "Crio sistemas Web que tornam a vida do usuário mais fácil utilizando as principais ferramentas do mercado. Com o objetivo de entregar soluções que tenham desde simples funcionalidades, até sistemas mais complexos e robustos"
         },
         {
-            icon: <RiComputerLine />,
+            icon: <RiDatabase2Line />,
             title: "Back End",
             content: "Desenvolvimento de um sistema backend que entregue rotas funcionais a uma aplicação utilizando NodeJS, Banco de Dados SQL e noSQL"
         },
