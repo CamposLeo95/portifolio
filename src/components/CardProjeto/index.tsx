@@ -1,40 +1,48 @@
+import { ModalContext } from "../../Context/ModalContext";
 import CardImg from "../CardImg";
 import { ContainerProjeto } from "./styles";
 
-import ModalProjeto from "../ModalProjeto";
-import { useState } from "react";
+import { useContext } from "react";
 
 interface CardProjetoProps {
-    dataProjeto: {
-        id: number,
-        image: any,
-        title: string,
-        tecnologies: any[],
-        linkProject: string,
-        linkGitHub: string,
-        description: string,
-    }
+    id: number,
+    image: any,
+    title: string,
+    tecnologies: any[],
+    linkProject?: string,
+    linkGitHub: string,
+    description: string,
+    challenge: string[] | undefined
 }
 
-export default function CardProjeto({ dataProjeto }: CardProjetoProps) {
-    const [isModal, setIsModal] = useState<boolean>(false)
+export default function CardProjeto({
+    id,
+    image,
+    title,
+    tecnologies,
+    linkProject,
+    linkGitHub,
+    description,
+    challenge
+
+}: CardProjetoProps) {
+
+    const modalContext = useContext(ModalContext)
+
+    const handleModal = () => {
+        modalContext?.setIsModal(!modalContext.isModal)
+
+        modalContext?.setdataProjeto({ id, description, image, linkGitHub, linkProject, tecnologies, title, challenge })
+    }
 
     return (
-        <ContainerProjeto id={dataProjeto.id}>
-            {isModal && <ModalProjeto />}
-            <CardImg img={dataProjeto.image} />
+        <ContainerProjeto id={id}>
+            <CardImg img={image[0]} />
             <div className="descricao">
-                <h3>{dataProjeto.title}</h3>
-                <p>{dataProjeto.description}</p>
-                <div className="ferramentas">
-                    {dataProjeto.tecnologies.map(tecnologie => (
-                        <img src={tecnologie} alt={tecnologie} width={30} />
-                    ))}
-                </div>
+                <h3>{title}</h3>
+                <p>{description}</p>
                 <div className="controles">
-                    {/* <a href={dataProjeto.linkProject} target="_blank">Ver Mais</a> */}
-                    <a onClick={() => setIsModal(!isModal)}>Ver Mais</a>
-                    <a href={dataProjeto.linkGitHub} target="_blank">GitHub</a>
+                    <button onClick={handleModal}> Ver Mais </button>
                 </div>
             </div>
         </ContainerProjeto>

@@ -45,16 +45,18 @@ export const ContainerProjeto = styled.div<ContainerProjetoProps>`
             align-items: center;
             gap: 20px;
 
-            & a{
+            & button{
                 color: var(--cor-azul-claro);
+                font-size: 16px;
                 border: 1px solid var(--cor-azul-claro);
-                width: 120px;
+                width:90%;
                 padding: 8px;
                 border-radius: 5px;
                 transition: 0.3s;
+                cursor: pointer;
             }
 
-            & a:hover{
+            & button:hover{
                 color: #fff;
                 background-color: var(--cor-azul-claro);
                 border: 1px solid var(--cor-azul-claro);

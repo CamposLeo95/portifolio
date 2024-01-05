@@ -6,10 +6,15 @@ import node from '../img/icons/node.png'
 import ts from '../img/icons/ts.png'
 import styled from '../img/icons/styled.png'
 import git from '../img/icons/git.png'
+import tailwind from '../img/icons/tailwind.png'
+import redux from '../img/icons/redux.png'
+import prisma from '../img/icons/prisma.png'
+import jwt from '../img/icons/jwt.png'
+import sqlite from '../img/icons/sqlite.png'
 
 
 export const iconTec = {
-    css, js, html, react, node, ts, styled, git
+    css, js, html, react, node, ts, styled, git, tailwind, redux, prisma, jwt, sqlite
 }
 
 export const iconTecArray = [
@@ -41,4 +46,24 @@ export const iconTecArray = [
         name: "GIT",
         img: git
     },
+    {
+        name: "Tailwind",
+        img: tailwind
+    },
+    {
+        name: "Redux",
+        img: redux
+    },
+    {
+        name: "Prisma",
+        img: prisma
+    },
+    {
+        name: "JWT",
+        img: jwt
+    },
+    {
+        name: "SQLite",
+        img: sqlite
+    }
 ]

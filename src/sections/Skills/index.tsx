@@ -3,10 +3,10 @@ import { SecondContainer } from "./styles"
 
 import { RiComputerLine, RiDatabase2Line, RiFileSettingsLine } from "react-icons/ri"
 
-import { iconTecArray } from "../../../assets/Data/images";
+import { iconTecArray } from "../../assets/Data/images";
 
-import SliderImg from "../../SliderImg";
-import CardSkill from "../../CardSkill";
+import SliderImg from "../../components/SliderImg";
+import CardSkill from "../../components/CardSkill";
 
 export default function Skills() {
     const skills = [
@@ -41,7 +41,7 @@ export default function Skills() {
                 </div>
                 <div className="container-card-skill">
                     {skills.map((skill) => (
-                        <CardSkill icon={skill.icon} title={skill.title} content={skill.content} />
+                        <CardSkill key={skill.title} icon={skill.icon} title={skill.title} content={skill.content} />
                     ))}
                 </div>
             </SecondContainer>
