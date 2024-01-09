@@ -105,7 +105,6 @@ export const projetos = [
         image: [car_redux, car_redux2],
         title: "Carrinho - Redux",
         tecnologies: [iconTec.ts, iconTec.react, iconTec.tailwind, iconTec.redux],
-        linkProject: " ",
         linkGitHub: "https://github.com/CamposLeo95/projeto_redux_toolkit",
         description: "Este é um projeto para aprender a utilizar o Redux toolkit, fazendo a simulação de um carrinho de compras em que foi preciso fazer as alterações de estado de forma global para poder atualizar varios componentes ao mesmo tempo.",
         challenge: [
@@ -119,6 +118,7 @@ export const projetos = [
         image: [backendPoste1, backendPoste2, backendPoste3],
         title: "Projeto Poste - BackEnd",
         tecnologies: [iconTec.node, iconTec.prisma, iconTec.jwt, iconTec.sqlite, iconTec.git],
+        linkProject: "https://projeto-front-post.vercel.app/",
         linkGitHub: "https://github.com/CamposLeo95/projeto_back_post",
         description: "Esta é a parte backend de um projeto desenvolvido baseado em um mural de comunicados. Visando implementar um sistema que permita a criação de usuarios administrativos ou não, que com base em seus respectivos acessos podem criar, alterar ou até mesmo deletar um poste.",
         challenge: [
@@ -136,6 +136,7 @@ export const projetos = [
         image: [frontPoste1, frontPoste2, frontPoste3, frontPoste4],
         title: "Projeto Poste - FrontEnd",
         tecnologies: [iconTec.ts, iconTec.react, iconTec.tailwind, iconTec.git],
+        linkProject: "https://projeto-front-post.vercel.app/",
         linkGitHub: "https://github.com/CamposLeo95/projeto_front_post",
         description: "Esta é a parte frontend do projeto desenvolvido baseado em um mural de comunicados. Visando implementar um sistema que permita a criação de usuarios administrativos ou não, que com base em seus respectivos acessos podem criar, alterar ou até mesmo deletar um poste.",
         challenge: [
