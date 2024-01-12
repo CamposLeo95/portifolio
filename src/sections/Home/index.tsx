@@ -33,7 +33,7 @@ export default function Home() {
                 <div className='conteudo'>
                     <h2>{subtitle}</h2>
                     <p>
-                        Sou um desenvolvedor front-end especializado em React, com uma paixão por criar interfaces dinâmicas e envolventes.
+                        Desenvolvedor Full Stack, amante da tecnologia e especializado em React, Node e agora entrando no mundo do desenvolvimento mobile com React-Native.
                     </p>
                     <div className='contatos'>
                         <a href="https://www.linkedin.com/in/leonardo-a-campos/" target="_blank">

@@ -27,13 +27,24 @@ export default function About() {
                         <CardImg img={imgPerfil} />
                         <div className="card-descricao">
                             <p>
-                                Olá, meu nome é Leonardo e estou em uma empolgante transição de carreira para me tornar um desenvolvedor. Desde 2022, tenho me dedicado aos estudos e aprimoramento de habilidades para me destacar nessa área em constante evolução.
+                                Amante de tecnologia, desenvolvimento e resoluções de problemas estes foram os principais motivos que fizeram com que me torna-se um desenvolvedor Full Stack. Adquirindo conhecimentos tanto em desenvolvimento de aplicações web com
+                                <span className="texto-distaque">
+                                    React, Typescript e Node
+                                </span>
+                                quanto mobile com
+                                <span className="texto-distaque">
+                                    React-Native.
+                                </span>
+
                             </p>
                             <p>
-                                Hoje conto com diversas experiências em projetos pessoais e de cursos que realizando nessa trajetória, trazendo um conjunto sólido de habilidades em <span className="texto-distaque">React, TypeScript, Node.js</span> e bancos de dados <span className="texto-distaque">Postgres</span> e <span className="texto-distaque">MongoDB.</span>
+                                Porem não pretendo parar por ai!
                             </p>
                             <p>
-                                Estou ansioso para fazer parte de um time que compartilhe meu entusiasmo pela inovação e pelo desenvolvimento de software, onde juntos podemos impulsionar o futuro da tecnologia.
+                                Hoje procuro me manter sempre atualizado com as tendências de mercado, adquirindo cursos participando de workshops, lendo artigos, consumindo videos de novas tecnologias ou quaisquer conteudos que me permitam evoluir na carreira. Afinal para mim as linguagens são apenas ferramentas para construirmos algo maior.
+                            </p>
+                            <p>
+                                Meu objetivo é me tornar um especialista em desenvolvimento, participando de grandes projetos que me tragam cada vez mais desafios afim de que possa evoluir e trazer cada vez mais resultados tanto para minha carreira quanto para empresas e pessoas.
                             </p>
                         </div>
                     </div>
