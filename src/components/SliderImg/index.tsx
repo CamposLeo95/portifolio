@@ -22,6 +22,9 @@ export default function SliderImg({ iconTecArray }: SliderImgProps) {
       modules={[Navigation, A11y, Pagination]}
       spaceBetween={(media > 795) ? 10 : 100}
       slidesPerView={(media > 750) ? 3 : 1}
+      autoplay={{
+        delay: 1000,
+      }}
     >
       {iconTecArray.map((icon: any) => (
         <SwiperSlide key={icon.name} style={{

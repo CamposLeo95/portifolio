@@ -4,7 +4,7 @@ import { MainContainer } from "./styles"
 export default function Home() {
 
     const [subtitle, setSubtitle] = useState<string>('')
-    const originalSubtitle = "Desenvolvedor React Front-End"
+    const originalSubtitle = "Desenvolvedor Front-End"
 
     const write = () => {
         const arraySubtitle = originalSubtitle.split('')
@@ -33,7 +33,7 @@ export default function Home() {
                 <div className='conteudo'>
                     <h2>{subtitle}</h2>
                     <p>
-                        Desenvolvedor Full Stack, amante da tecnologia e especializado em React, Node e agora entrando no mundo do desenvolvimento mobile com React-Native.
+                        Tenho 29 anos sou moro e sou natural de São Paulo, SP. Apaixonado por tecnologia e esportes. Hoje atuo como desenvolvedor Front-End.
                     </p>
                     <div className='contatos'>
                         <a href="https://www.linkedin.com/in/leonardo-a-campos/" target="_blank">

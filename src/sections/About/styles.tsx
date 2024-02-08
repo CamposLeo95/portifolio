@@ -8,6 +8,7 @@ export const MainContainer = styled.section`
     font-size: 1.6rem;
     padding: 20px 0; 
 
+
     & h2{
         color: var(--cor-azul-claro); 
         font-size: var(--font-header-um); 
@@ -54,6 +55,7 @@ export const MainContainer = styled.section`
             display: flex;
             flex-direction:column;
             width: 80%;
+            height: 100%;
             gap:10px;
         }
 

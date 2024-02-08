@@ -1,25 +1,15 @@
 import { Dispatch, ReactNode, SetStateAction, createContext, useState } from "react"
+import { ProjetosProps } from "../interfaces/interfaces"
 
 interface ModalContextProvider {
     children: ReactNode
 }
 
-type dataProject = {
-    id: number,
-    image: any,
-    title: string,
-    tecnologies: any[],
-    linkProject?: string,
-    linkGitHub: string,
-    description: string,
-    challenge: string[] | undefined
-}
-
 type ModalContextProps = {
     isModal: boolean
     setIsModal: Dispatch<SetStateAction<boolean>>
-    dataProjeto: dataProject | undefined
-    setdataProjeto: Dispatch<SetStateAction<dataProject | undefined>>
+    dataProjeto: ProjetosProps | undefined
+    setdataProjeto: Dispatch<SetStateAction<ProjetosProps | undefined>>
 }
 
 export const ModalContext = createContext<ModalContextProps | undefined>(undefined)
@@ -27,7 +17,7 @@ export const ModalContext = createContext<ModalContextProps | undefined>(undefin
 export const ModalContextProvider = ({ children }: ModalContextProvider) => {
 
     const [isModal, setIsModal] = useState(false);
-    const [dataProjeto, setdataProjeto] = useState<dataProject | undefined>()
+    const [dataProjeto, setdataProjeto] = useState<ProjetosProps | undefined>()
 
     const contextValue: ModalContextProps = {
         isModal,

@@ -1,19 +1,8 @@
 import { ModalContext } from "../../Context/ModalContext";
-import CardImg from "../CardImg";
-import { ContainerProjeto } from "./styles";
+import * as S from "./styles";
 
 import { useContext } from "react";
-
-interface CardProjetoProps {
-    id: number,
-    image: any,
-    title: string,
-    tecnologies: any[],
-    linkProject?: string,
-    linkGitHub: string,
-    description: string,
-    challenge: string[] | undefined
-}
+import { ProjetosProps } from "../../interfaces/interfaces";
 
 export default function CardProjeto({
     id,
@@ -23,29 +12,37 @@ export default function CardProjeto({
     linkProject,
     linkGitHub,
     description,
-    challenge
-
-}: CardProjetoProps) {
+    challenge,
+    video
+}: ProjetosProps) {
 
     const modalContext = useContext(ModalContext)
 
     const handleModal = () => {
         modalContext?.setIsModal(!modalContext.isModal)
 
-        modalContext?.setdataProjeto({ id, description, image, linkGitHub, linkProject, tecnologies, title, challenge })
+        modalContext?.setdataProjeto({ id, description, image, linkGitHub, linkProject, tecnologies, title, challenge, video })
     }
 
     return (
-        <ContainerProjeto id={id}>
-            <CardImg img={image[0]} />
-            <div className="descricao">
-                <h3>{title}</h3>
-                <p>{description}</p>
-                <div className="controles">
-                    <button onClick={handleModal}> Ver Mais </button>
-                </div>
-            </div>
-        </ContainerProjeto>
+        <S.ContainerProjeto id={id}>
+            <S.CardImg onClick={handleModal}>
+                <S.Img src={image[0]} />
+            </S.CardImg>
+            <S.CardDescription>
+                <S.Controls>
+                    <S.Tecnologies>
+                        {tecnologies && tecnologies.map((itens) => (
+                            <img src={itens} width={"30px"} />
+                        ))}
+                    </S.Tecnologies>
+                    <S.Button
+                        onClick={handleModal}>
+                        Ver Mais
+                    </S.Button>
+                </S.Controls>
+            </S.CardDescription>
+        </S.ContainerProjeto>
     )
 }
 

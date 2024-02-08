@@ -14,43 +14,51 @@ import poke from "../img/poke.png"
 import poke2 from "../img/poke2.png"
 import poke3 from "../img/poke3.png"
 
-import port from "../img/port.png"
+import port from "../img/portfolio.png"
 
 import car_redux from "../img/carrinho_redux.png"
 import car_redux2 from "../img/carrinho_redux2.png"
-
-import backendPoste1 from "../img/backendPoste1.png"
-import backendPoste2 from "../img/backendPoste2.png"
-import backendPoste3 from "../img/backendPoste3.png"
-
 
 import frontPoste1 from "../img/frontPoste1.png"
 import frontPoste2 from "../img/frontPoste2.png"
 import frontPoste3 from "../img/frontPoste3.png"
 import frontPoste4 from "../img/frontPoste4.png"
 
+import playstation from "../img/playstation.png"
+
+// videos ___________________________
+
+import rede_social_video from "../videos/rede_social.webm"
+import todo_video from "../videos/todo.webm"
+import redux_video from "../videos/redux.webm"
+import pokemon_video from "../videos/pokemon.webm"
+import velha_video from "../videos/velha.webm"
+import previsao_video from "../videos/previsao.webm"
+import churrasco_video from "../videos/churrasco.webm"
+import playstation_video from "../videos/playstation.webm"
 
 
 export const projetos = [
-
 
     {
         id: 0,
         title: "Churrascometro",
         image: [churras],
         tecnologies: [iconTec.js, iconTec.html, iconTec.css, iconTec.git],
-        linkProject: "https://camposleo95.github.io/Projeto-Churrascometro/",
+        linkProject: "https://projeto-churrascometro-delta.vercel.app/",
         linkGitHub: "https://github.com/CamposLeo95/Projeto-Churrascometro",
         description: "Projeto simples que consiste em simular a quantidade de itens necessários para realizar um churrasco, com base no número de pessoas e tempo de duração do evento. Feito para treinar logica de programação",
+        video: churrasco_video
     },
     {
         id: 1,
         title: "Previsão do tempo",
         image: [previsao],
         tecnologies: [iconTec.js, iconTec.html, iconTec.css, iconTec.git],
-        linkProject: "https://camposleo95.github.io/Projeto-previsao-tempo/",
+        linkProject: "https://projeto-previsao-tempo-dxpslwk1s-camposleo95.vercel.app/",
         linkGitHub: "https://github.com/CamposLeo95/Projeto-previsao-tempo",
         description: "Projeto criado para consumo de uma API de previsão do tempo utilizando fetch para fazer a requisição com o Back-End ",
+        video: previsao_video
     },
     {
         id: 2,
@@ -60,7 +68,7 @@ export const projetos = [
         linkProject: "https://camposleo95.github.io/Jogo-da-Velha/",
         linkGitHub: "https://github.com/CamposLeo95/Jogo-da-Velha",
         description: "Jogo da Velha construido utilizando as tecnologias basicas HTML, CSS e JavaScript. Projeto criado para pratica de logica de programação basica",
-        // challenge: []
+        video: velha_video,
     },
     {
         id: 3,
@@ -70,7 +78,7 @@ export const projetos = [
         linkProject: "https://todo-react-ts-ivory.vercel.app/",
         linkGitHub: "https://github.com/CamposLeo95/Todo-React-Ts",
         description: "Projeto TodoList, feito com a orientação de Matheus Battisti, do Hora de Codar, utilizando TypeScript e React. O projeto consiste em uma lista de tarefas em que é possível registrar, editar e excluir tarefas conforme necessário. ",
-        challenge: []
+        video: todo_video
     },
 
     {
@@ -81,7 +89,7 @@ export const projetos = [
         linkProject: "https://projeto-pokedex-sand.vercel.app/",
         linkGitHub: "https://github.com/CamposLeo95/projeto_pokedex",
         description: "Aplicação desenvolvida em React, consumindo a API da PokeAPI com o Axios para obter os dados dos através de requisições GET e exibi-los na página inicial. Com redirecionamento de rotas feito em react-router-dom",
-        challenge: []
+        video: pokemon_video
     },
     {
         id: 5,
@@ -111,37 +119,21 @@ export const projetos = [
             "O primeiro desafio foi entender os principios do Redux e o modo como funciona.",
             "Como implementa-lo nos componentes quais iriam usuar os estados e quais iriam altera-los fazendo com que pudessem ser manipulados de quaisquer componentes envolvidos no provider.",
             "Qual a melhor forma de arquitetar e dividir as funcionalidades implementando o principio de dividir tarefas",
-        ]
+        ],
+        video: redux_video
     },
+
     {
         id: 7,
-        image: [backendPoste1, backendPoste2, backendPoste3],
-        title: "Projeto Poste - BackEnd",
-        tecnologies: [iconTec.node, iconTec.prisma, iconTec.jwt, iconTec.sqlite, iconTec.git],
-        linkProject: "https://projeto-front-post.vercel.app/",
-        linkGitHub: "https://github.com/CamposLeo95/projeto_back_post",
-        description: "Esta é a parte backend de um projeto desenvolvido baseado em um mural de comunicados. Visando implementar um sistema que permita a criação de usuarios administrativos ou não, que com base em seus respectivos acessos podem criar, alterar ou até mesmo deletar um poste.",
-        challenge: [
-            "O primeiro desafio foi o ponto para fazer a conexão com o banco de dados e poder unir o banco de users com o de postes e para isso utilizei o prisma, um ORM que facilita a interação com bancos de dados.",
-
-            "Outro desafio foi a autenticação de usuarios para permitir somente tivessem acesso a rota de postes usuarios que possuissem um token e para isso utilizei JWT que permite a manipulação de tokens de uma forma mais pratica.",
-
-            "Mais um ponto foi trabalhar com Orientação a objetos visto que é uma dos modos de trabalhar mais utilizados no mercado optei por implementa-lo no projeto e poder aprender um pouco mais.",
-
-            "Fazer a criptografia das senhas dos usuarios para poder registrar no banco de dados e com isso manter uma maior segurança da aplicação, para isso usei o bcrypt."
-        ]
-    },
-    {
-        id: 8,
         image: [frontPoste1, frontPoste2, frontPoste3, frontPoste4],
-        title: "Projeto Poste - FrontEnd",
-        tecnologies: [iconTec.ts, iconTec.react, iconTec.tailwind, iconTec.git],
+        title: "Projeto Rede Social",
+        tecnologies: [iconTec.ts, iconTec.react, iconTec.tailwind, iconTec.git, iconTec.node, iconTec.prisma, iconTec.jwt, iconTec.postgres, iconTec.sqlite],
         linkProject: "https://projeto-front-post.vercel.app/",
         linkGitHub: "https://github.com/CamposLeo95/projeto_front_post",
-        description: "Esta é a parte frontend do projeto desenvolvido baseado em um mural de comunicados. Visando implementar um sistema que permita a criação de usuarios administrativos ou não, que com base em seus respectivos acessos podem criar, alterar ou até mesmo deletar um poste.",
+        description: "Projeto baseado em uma rede social utilizando React, Tailwind, Node e banco de dados PostgreSQLcom o objetivo de implementar um sistema de postagens semelhante ao Twitter. O projeto permite a criação de usuários com permissões, possibilitando que eles façam postagens.",
         challenge: [
 
-            'IMPORTANTE! - PARA EXECUTAR ESSE PROJETO É NECESSARIO EXECUTAR O PROJETO - POSTE-BACKEND',
+            'IMPORTANTE! - PARA EXECUTAR ESSE PROJETO É NECESSARIO EXECUTAR O PROJETO - POST-BACKEND',
 
             "Utilizar o tailwind, fiz o uso dessa lib para a estilização do projeto.",
 
@@ -149,8 +141,27 @@ export const projetos = [
 
             "Uso do axios, me ajudou com as configurações das requisições permitindo inserir uma rota padrão de requisição, a inserção do token recuperado do backend nos headers para conseguir acessar as rotas de postes e a manipulação de requisições em geral para acesso aos dados da API",
 
-            "Uso do context API para poder manipular o estado global do modal. criando uma forma de abrir e fecha-lo e tambem manipular o componente que apareceria dentro desto, para o caso de editar o poste, criar um poste ou editar um usuario."
-        ]
+            "Uso do context API para poder manipular o estado global do modal. criando uma forma de abrir e fecha-lo e tambem manipular o componente que apareceria dentro desto, para o caso de editar o poste, criar um poste ou editar um usuario.",
+
+            "O primeiro desafio foi o ponto para fazer a conexão com o banco de dados e poder unir o banco de users com o de postes e para isso utilizei o prisma, um ORM que facilita a interação com bancos de dados.",
+
+            'Outro desafio foi a autenticação de usuarios para permitir somente tivessem acesso a rota de postes usuarios que possuissem um token e para isso utilizei JWT que permite a manipulação de tokens de uma forma mais pratica.',
+
+            'Mais um ponto foi trabalhar com Orientação a objetos visto que é uma dos modos de trabalhar mais utilizados no mercado optei por implementa-lo no projeto e poder aprender um pouco mais.'
+
+        ],
+        video: rede_social_video
+    },
+
+    {
+        id: 8,
+        image: [playstation],
+        title: "Projeto Rede Social",
+        tecnologies: [iconTec.ts, iconTec.angular, iconTec.html, iconTec.css, iconTec.git],
+        linkProject: "https://plystationstoreclone.netlify.app/",
+        linkGitHub: "https://github.com/CamposLeo95/projeto_playstation_store_angular",
+        description: "Clone da playstation store para aplicar os conhecimentos de Angular dos cursos que estou realizando. Aplicando conceitos de diretivas | Arquitetura de pastas | aplicação do Angular CLI | Componentização | deploy do projeto",
+        video: playstation_video
     }
 
-]
+].reverse()

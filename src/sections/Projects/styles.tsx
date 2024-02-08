@@ -1,12 +1,13 @@
 import styled from "styled-components";
 
 export const SecondContainer = styled.div`
-    width: 100%;
+    width: 100vw;
     display: flex;
     justify-content: center;
     gap: 50px;
     align-items: center;
     margin: 30px 0; 
+    /* background-color: red; */
 
     & .card-projetos{
         width:100%;
@@ -28,10 +29,10 @@ export const SecondContainer = styled.div`
 
     & .container-cards-projeto{
         width: 100%;
-        display: flex;
-        flex-direction: column-reverse;
-        align-items: center;
-        gap: 15px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: space-evenly;
+        gap: 35px;
     }
 
     @media (min-width: 815px) {

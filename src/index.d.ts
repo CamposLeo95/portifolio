@@ -1,3 +1,4 @@
-module '*.png'
-module '*.jpg'
-module '*.pdf'
+module '*.png';
+module '*.jpg';
+module '*.pdf';
+module '*.webm';

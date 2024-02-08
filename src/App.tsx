@@ -15,12 +15,11 @@ function App() {
       <ThemeProvider theme={light}>
         <Home />
         <About />
-        <Skills />
         <Projects />
+        <Skills />
         <Contacts />
       </ThemeProvider>
     </ModalContextProvider>
-
   )
 }
 

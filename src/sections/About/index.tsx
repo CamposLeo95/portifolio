@@ -27,24 +27,11 @@ export default function About() {
                         <CardImg img={imgPerfil} />
                         <div className="card-descricao">
                             <p>
-                                Amante de tecnologia, desenvolvimento e resoluções de problemas estes foram os principais motivos que fizeram com que me torna-se um desenvolvedor Full Stack. Adquirindo conhecimentos tanto em desenvolvimento de aplicações web com
-                                <span className="texto-distaque">
-                                    React, Typescript e Node
-                                </span>
-                                quanto mobile com
-                                <span className="texto-distaque">
-                                    React-Native.
-                                </span>
-
+                                Profissional com experiência na criação de soluções e aplicações web. Comprometido em entregar qualidade e organização no desenvolvimento de projetos. Vivência na utilização de linguagens e frameworks Front-end, como
+                                <span className="texto-distaque"> HTML, CSS, JavaScript, TypeScript, React e Angular. </span>
                             </p>
                             <p>
-                                Porem não pretendo parar por ai!
-                            </p>
-                            <p>
-                                Hoje procuro me manter sempre atualizado com as tendências de mercado, adquirindo cursos participando de workshops, lendo artigos, consumindo videos de novas tecnologias ou quaisquer conteudos que me permitam evoluir na carreira. Afinal para mim as linguagens são apenas ferramentas para construirmos algo maior.
-                            </p>
-                            <p>
-                                Meu objetivo é me tornar um especialista em desenvolvimento, participando de grandes projetos que me tragam cada vez mais desafios afim de que possa evoluir e trazer cada vez mais resultados tanto para minha carreira quanto para empresas e pessoas.
+                                Com conhecimentos em tecnologias Back-end, utilizando <span className="texto-distaque"> Node, Postgres e MongoDB. </span> Versionamento de código com <span className="texto-distaque"> GIT e GitHub </span>e criação de imagens com <span className="texto-distaque"> Docker</span>. Boa comunicação, compreensão das necessidades do cliente e participação ativa, fornecendo ideias e feedbacks construtivos.
                             </p>
                         </div>
                     </div>

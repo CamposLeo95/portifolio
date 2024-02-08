@@ -11,16 +11,22 @@ import redux from '../img/icons/redux.png'
 import prisma from '../img/icons/prisma.png'
 import jwt from '../img/icons/jwt.png'
 import sqlite from '../img/icons/sqlite.png'
+import angular from '../img/icons/angular.png'
+import postgres from '../img/icons/postgres.png'
 
 
 export const iconTec = {
-    css, js, html, react, node, ts, styled, git, tailwind, redux, prisma, jwt, sqlite
+    css, js, html, react, node, ts, styled, git, tailwind, redux, prisma, jwt, sqlite, angular, postgres
 }
 
 export const iconTecArray = [
     {
         name: "React",
         img: react
+    },
+    {
+        name: "Angular",
+        img: angular
     },
     {
         name: "TypeScript",
@@ -61,6 +67,10 @@ export const iconTecArray = [
     {
         name: "JWT",
         img: jwt
+    },
+    {
+        name: "Postgres",
+        img: postgres
     },
     {
         name: "SQLite",

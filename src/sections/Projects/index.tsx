@@ -1,40 +1,28 @@
 import { projetos } from "../../assets/Data/data"
 
-import { SecondContainer } from "./styles"
-import CardProjeto from "../../components/CardProjeto"
+import * as S from "./styles"
 import ModalProjeto from "../../components/ModalProjeto"
 import { useContext } from "react"
 import { ModalContext } from "../../Context/ModalContext"
 
+import Slider from "../../components/Slider"
 
 export default function Projects() {
-
     const modalContext = useContext(ModalContext)
 
     return (
-        <SecondContainer>
+        <S.SecondContainer>
             {modalContext?.isModal && <ModalProjeto />}
             <div className="card-projetos">
                 <h2>
                     <span>Meus, </span>
                     <span className="span-about-two">Projetos</span>
                 </h2>
-                <div className="container-cards-projeto">
-                    {projetos.map(({ id, description, image, linkGitHub, linkProject, tecnologies, title, challenge }) => (
-                        <CardProjeto key={id}
-                            id={id}
-                            description={description}
-                            image={image}
-                            linkGitHub={linkGitHub}
-                            linkProject={linkProject}
-                            tecnologies={tecnologies}
-                            title={title}
-                            challenge={challenge}
-                        />
-                    ))}
+                <div style={{ width: "100vw" }}>
+                    <Slider projetos={projetos} />
                 </div>
             </div>
-        </SecondContainer>
+        </S.SecondContainer>
     )
 }
 
