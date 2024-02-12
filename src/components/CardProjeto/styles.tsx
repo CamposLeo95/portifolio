@@ -107,8 +107,9 @@ export const Tecnologies = styled.div`
     display: flex;
     gap: 8px;
     justify-content: center;
+    flex-wrap: wrap;
 
     & img{
-        border-radius: 3ptx;
+        border-radius: 5px;
     }
 `

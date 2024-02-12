@@ -18,7 +18,7 @@ export default function Slider({ projetos }: SliderProps) {
   return (
     <Swiper
       modules={[Navigation, Pagination, Autoplay]}
-      loop={true}
+      loop={false}
       breakpoints={{
         640: {
           slidesPerView: 1,
@@ -37,7 +37,6 @@ export default function Slider({ projetos }: SliderProps) {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
       }}
-    // pagination={{ clickable: true }}
     >
       {
         projetos.map((P) => (
