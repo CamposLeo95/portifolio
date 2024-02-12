@@ -1,11 +1,12 @@
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { A11y, Navigation, Pagination } from 'swiper';
+import { A11y, Autoplay, Navigation, Pagination } from 'swiper';
 
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+
 
 interface SliderImgProps {
   iconTecArray: object[]
@@ -17,14 +18,28 @@ export default function SliderImg({ iconTecArray }: SliderImgProps) {
   const media = window.screen.width
   return (
     <Swiper
-      pagination={{ clickable: true }}
-      style={{ background: "#d1d1d1" }}
-      modules={[Navigation, A11y, Pagination]}
-      spaceBetween={(media > 795) ? 10 : 100}
-      slidesPerView={(media > 750) ? 3 : 1}
-      autoplay={{
-        delay: 1000,
+      breakpoints={{
+        640: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 40,
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 50,
+        },
       }}
+      loop={true}
+      spaceBetween={30}
+      centeredSlides={true}
+      autoplay={{
+        delay: 1500,
+        disableOnInteraction: false,
+      }}
+      modules={[Autoplay, Pagination, Navigation]}
     >
       {iconTecArray.map((icon: any) => (
         <SwiperSlide key={icon.name} style={{

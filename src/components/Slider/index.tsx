@@ -33,10 +33,7 @@ export default function Slider({ projetos }: SliderProps) {
           spaceBetween: 50,
         },
       }}
-      navigation={{
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      }}
+
     >
       {
         projetos.map((P) => (
