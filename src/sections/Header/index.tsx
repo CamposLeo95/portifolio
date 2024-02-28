@@ -9,18 +9,20 @@ export default function Header() {
 
     return (
         <S.MainContainer>
-            <S.Banner>
+            <S.ContainerText>
                 <S.MainText>
-                    <span className='span-title-one'>Desenvolvedor,</span>
-                    <span className='span-title-two'> FullStack</span>
+                    <span className='main-text_first'>Desenvolvedor, </span>
+                    <span className='main-text_second'>FullStack</span>
                 </S.MainText>
-                <div className='conteudo'>
-                    <h2>{subtitle}</h2>
-                    <p>
+                <S.ContainerInfo>
+                    <S.Subtitle>{subtitle}</S.Subtitle>
+                    <S.Content>
                         Profissional com experiência na criação de soluções e aplicações web. Comprometido em entregar qualidade e organização no desenvolvimento de projetos. Vivência na utilização de linguagens e frameworks Front-end, como
-                        <span className="texto-distaque"> HTML, CSS, JavaScript, TypeScript, React e Angular. </span>
-                    </p>
-                    <div className='contatos'>
+                        <S.TextBold>
+                            HTML, CSS, JavaScript, TypeScript, React e Angular.
+                        </S.TextBold>
+                    </S.Content>
+                    <S.CardIcons>
                         <a href="https://www.linkedin.com/in/leonardo-a-campos/" target="_blank">
                             <i className="bi bi-linkedin" />
                         </a>
@@ -30,17 +32,16 @@ export default function Header() {
                         <a href="https://github.com/CamposLeo95" target="_blank">
                             <i className="bi bi-github" />
                         </a>
-                    </div>
-                </div>
+                    </S.CardIcons>
+                </S.ContainerInfo>
+            </S.ContainerText>
 
-            </S.Banner>
-            <div className="quadrado"></div>
-            <div className="quadrado-linha"></div>
-            <div className="linha"></div>
-            <div className="card-imagem">
+            <S.SquareDesign />
+            <S.LineSquareDesign />
+            <S.LineDownDesign />
+            <S.CardPerfilImage>
                 <img src={imgPerfil} />
-            </div>
-
+            </S.CardPerfilImage>
         </S.MainContainer>
     )
 }
