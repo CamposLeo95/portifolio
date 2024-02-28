@@ -24,6 +24,7 @@ export default function CardProjeto({
         modalContext?.setdataProjeto({ id, description, image, linkGitHub, linkProject, tecnologies, title, challenge, video })
     }
 
+
     return (
         <S.ContainerProjeto id={id}>
             <S.CardImg onClick={handleModal}>

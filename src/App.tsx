@@ -1,4 +1,4 @@
-import Home from "./sections/Home"
+import Header from "./sections/Header"
 import Projects from "./sections/Projects"
 import Skills from "./sections/Skills"
 import Contacts from "./sections/Contacts"
@@ -13,7 +13,7 @@ function App() {
   return (
     <ModalContextProvider>
       <ThemeProvider theme={light}>
-        <Home />
+        <Header />
         <About />
         <Projects />
         <Skills />

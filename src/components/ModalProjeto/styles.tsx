@@ -33,7 +33,7 @@ export const CardModal = styled.div`
     width: 100%;
     max-width: 1024px;
     max-height: 90vh;
-    background-color: #2c2c2c;
+    background: #000000ed;
     padding: 5px;
     display: flex;
     flex-direction: column;
