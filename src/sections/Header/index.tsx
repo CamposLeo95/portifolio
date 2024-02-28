@@ -17,10 +17,7 @@ export default function Header() {
                 <S.ContainerInfo>
                     <S.Subtitle>{subtitle}</S.Subtitle>
                     <S.Content>
-                        Profissional com experiência na criação de soluções e aplicações web. Comprometido em entregar qualidade e organização no desenvolvimento de projetos. Vivência na utilização de linguagens e frameworks Front-end, como
-                        <S.TextBold>
-                            HTML, CSS, JavaScript, TypeScript, React e Angular.
-                        </S.TextBold>
+                        Profissional com experiência na criação de soluções e aplicações web. Comprometido em entregar qualidade e organização no desenvolvimento de projetos. Vivência na utilização de linguagens e frameworks Front-end, como <S.TextBold> HTML, CSS, JavaScript, TypeScript, React e Angular.</S.TextBold>
                     </S.Content>
                     <S.CardIcons>
                         <a href="https://www.linkedin.com/in/leonardo-a-campos/" target="_blank">

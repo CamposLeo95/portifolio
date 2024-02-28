@@ -1,5 +1,7 @@
 import styled from "styled-components";
-import bgWhite from '../../assets/img/fundoWhite.png'
+import bgMobile from '../../assets/img/bgMobile.png'
+import bgTablet from '../../assets/img/bgTablet.png'
+import bgPc from '../../assets/img/bgPc.png'
 
 export const MainContainer = styled.section`
     width: 100vw;
@@ -7,19 +9,24 @@ export const MainContainer = styled.section`
     justify-content: center;
     font-size: 1.6rem;
     background-color: #fff;
-    background-image: url(${bgWhite});
+    background-image: url(${bgMobile});
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: right -605px top;
+    background-position: center;
 
 
     & h2{
+
         color: var(--cor-azul-claro); 
         font-size: var(--font-header-um); 
     }
-
+    & .span-about-one{
+        font-family: var(--font-family-terceira);
+        font-weight: 400;
+    }
     & .span-about-two{
         color: #fff;
+        font-weight: 400;
         font-family: var(--font-family-secundaria);
     }
 
@@ -30,6 +37,7 @@ export const MainContainer = styled.section`
     }
 
     & .span-citacao-criador{
+        color: #fff;
         font-weight:bold;
         font-family: var(--font-family-secundaria);
         font-size: 2rem;
@@ -75,7 +83,7 @@ export const MainContainer = styled.section`
     }
 
     @media (min-width: 760px) {
-        background-position: right -200px top;
+        background-image: url(${bgTablet});
 
         & .card-about{
             margin: 20px 0;
@@ -83,6 +91,8 @@ export const MainContainer = styled.section`
             flex-direction: row;
             gap: 50px;
 
+        }
+        & .span-citacao-criador{
         }
 
         & img{
@@ -103,7 +113,7 @@ export const MainContainer = styled.section`
 
     @media (min-width: 1024px) {
 
-    background-position: right -100px top;
+        background-image: url(${bgPc});
 
         & .container-skill{
             gap: 50px;

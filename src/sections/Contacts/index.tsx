@@ -2,7 +2,7 @@
 import { useState } from "react"
 
 // Styled-Components
-import { SecondContainer, CardForm, Form } from "./styles"
+import { SecondContainer, CardForm, Form, Container } from "./styles"
 
 // EmailJs
 import emailjs from "@emailjs/browser"
@@ -47,61 +47,63 @@ export default function Contacts() {
     }
     return (
 
-        <SecondContainer>
-            <CardForm>
-                <Form onSubmit={sendEmail}>
-                    <input
-                        type="text"
-                        name="nome"
-                        placeholder="Digite seu nome"
-                        onChange={(e) => setName(e.target.value)}
-                        value={name}
-                    />
+        <Container>
+            <SecondContainer>
+                <CardForm>
+                    <Form onSubmit={sendEmail}>
+                        <input
+                            type="text"
+                            name="nome"
+                            placeholder="Digite seu nome"
+                            onChange={(e) => setName(e.target.value)}
+                            value={name}
+                        />
 
-                    <input
-                        type="email"
-                        name="email"
-                        placeholder="Digite seu email"
-                        onChange={(e) => setEmail(e.target.value)}
-                        value={email}
-                    />
-                    <textarea
-                        name="message"
-                        placeholder="Digite sua mensagem..."
-                        onChange={(e) => setMessage(e.target.value)}
-                        value={message}
-                    />
-                    <div>
-                        {
-                            isLoading
-                                ? <button type="submit" style={{
-                                    background: "#027502",
-                                    color: "#fff",
-                                    border: "none"
-                                }}>Enviando...</button>
-                                : <button type="submit">Enviar</button>
-                        }
-                    </div>
-                </Form>
-                <div className="descricao">
-                    <h3>Envie uma Mensagem</h3>
-                    <p>
-                        Fique a vontade para entrar em contato comigo atraves de umas das minhas redes sociais ou me enviando um e-mail preenchendo os campos ao lado
-                    </p>
+                        <input
+                            type="email"
+                            name="email"
+                            placeholder="Digite seu email"
+                            onChange={(e) => setEmail(e.target.value)}
+                            value={email}
+                        />
+                        <textarea
+                            name="message"
+                            placeholder="Digite sua mensagem..."
+                            onChange={(e) => setMessage(e.target.value)}
+                            value={message}
+                        />
+                        <div>
+                            {
+                                isLoading
+                                    ? <button type="submit" style={{
+                                        background: "#027502",
+                                        color: "#fff",
+                                        border: "none"
+                                    }}>Enviando...</button>
+                                    : <button type="submit">Enviar</button>
+                            }
+                        </div>
+                    </Form>
+                    <div className="descricao">
+                        <h3>Envie uma Mensagem</h3>
+                        <p>
+                            Fique a vontade para entrar em contato comigo atraves de umas das minhas redes sociais ou me enviando um e-mail preenchendo os campos ao lado
+                        </p>
 
-                    <div className="redes">
-                        <a href="https://www.linkedin.com/in/leonardo-a-campos/" target="_blank">
-                            <i className="bi bi-linkedin" />
-                        </a>
-                        <a href="https://wa.me/5511958639720" target="_blank">
-                            <i className="bi bi-whatsapp" />
-                        </a>
-                        <a href="https://github.com/CamposLeo95" target="_blank">
-                            <i className="bi bi-github" />
-                        </a>
+                        <div className="redes">
+                            <a href="https://www.linkedin.com/in/leonardo-a-campos/" target="_blank">
+                                <i className="bi bi-linkedin" />
+                            </a>
+                            <a href="https://wa.me/5511958639720" target="_blank">
+                                <i className="bi bi-whatsapp" />
+                            </a>
+                            <a href="https://github.com/CamposLeo95" target="_blank">
+                                <i className="bi bi-github" />
+                            </a>
+                        </div>
                     </div>
-                </div>
-            </CardForm>
-        </SecondContainer>
+                </CardForm>
+            </SecondContainer>
+        </Container>
     )
 }

@@ -65,7 +65,6 @@ export const MainText = styled.div`
     }
 
     & .main-text_second{
-        font-family: var(--font-family-secundaria);
         font-size: 20px;
         font-weight: 100;
         font-family: "Cinzel Decorative", serif;
@@ -116,7 +115,7 @@ export const Content = styled.p`
 
 export const TextBold = styled.span`  
 
-    font-size: var(--font-header-um);
+    font-size: 1.3rem;
     color: #fff;
 
     @media (min-width: 760px) {

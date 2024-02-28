@@ -1,11 +1,19 @@
 import styled from "styled-components";
+import bgBlack from "../../assets/img/fundoblack.jpg"
+
+
+export const Container = styled.div`
+    background-image: url(${`${bgBlack}`});
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* transform: rotate(180deg); */
+`
 
 export const SecondContainer = styled.div`
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color:var(--cor-azul-claro);
     padding: 20px;
 `
 export const CardForm = styled.div`
