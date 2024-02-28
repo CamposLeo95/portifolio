@@ -6,8 +6,8 @@ export const SecondContainer = styled.div`
     justify-content: center;
     gap: 50px;
     align-items: center;
-    /* margin: 30px 0;  */
-    background-image: linear-gradient(45deg, #000,#000000dc, #000000);
+    background-image: linear-gradient(180deg, #000, #000, #ececec);
+
     padding: 30px 0;
 
     & .card-projetos{
@@ -23,9 +23,15 @@ export const SecondContainer = styled.div`
         color: var(--cor-azul-claro); 
         font-size: var(--font-header-um); 
     }
+    & .span-about-one{
+        font-family: var(--font-family-terceira);
+        font-weight: 400;
+    }
 
     & .span-about-two{
+        color: #fff;
         font-family: var(--font-family-secundaria);
+        font-weight: 400;
     }
 
     & .container-cards-projeto{
@@ -36,7 +42,8 @@ export const SecondContainer = styled.div`
         gap: 35px;
     }
 
-    @media (min-width: 815px) {
+    @media (min-width: 1024px) {
+
         & .card-projetos{
             width: 70%;
         }

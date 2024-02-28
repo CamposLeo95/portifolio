@@ -11,10 +11,11 @@ export const GlobalStyle = createGlobalStyle`
         //Fonts-Family
         --font-family-principal: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         --font-family-secundaria: 'Caveat', cursive;
+        --font-family-terceira: "Cinzel Decorative", serif;
 
         //Colors
         --cor-azul-escuro: #080077; 
-        --cor-azul-claro: #0d8df5; 
+        --cor-azul-claro: #3264ee; 
         --cor-cinza-claro: #838383; 
 
         //Borders

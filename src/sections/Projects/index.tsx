@@ -15,7 +15,7 @@ export default function Projects() {
             {modalContext?.isModal && <ModalProjeto />}
             <div className="card-projetos">
                 <h2>
-                    <span>Meus, </span>
+                    <span className="span-about-one">Meus, </span>
                     <span className="span-about-two">Projetos</span>
                 </h2>
                 <div style={{ width: "100vw" }}>

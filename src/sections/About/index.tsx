@@ -11,7 +11,7 @@ export default function About() {
             <Container>
                 <div className="about">
                     <h2>
-                        <span>Sobre </span>
+                        <span className="span-about-one">Sobre </span>
                         <span className="span-about-two">Mim</span>
                     </h2>
                     <p>
@@ -33,11 +33,11 @@ export default function About() {
                             </p>
                         </div>
                     </div>
-                    {/* <div className="container-skill">
+                    <div className="container-skill">
                         <CardSkill title="dasdas" content="dasdasda" icon={<RiComputerLine />} />
                         <CardSkill title="dasdas" content="dasdasda" icon={<RiComputerLine />} />
                         <CardSkill title="dasdas" content="dasdasda" icon={<RiComputerLine />} />
-                    </div> */}
+                    </div>
                 </div>
             </Container>
         </S.MainContainer>
