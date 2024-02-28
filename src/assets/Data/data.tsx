@@ -125,6 +125,17 @@ export const projetos = [
 
     {
         id: 7,
+        image: [playstation],
+        title: "Projeto Rede Social",
+        tecnologies: [iconTec.ts, iconTec.angular, iconTec.html, iconTec.css, iconTec.git],
+        linkProject: "https://plystationstoreclone.netlify.app/",
+        linkGitHub: "https://github.com/CamposLeo95/projeto_playstation_store_angular",
+        description: "Clone da playstation store para aplicar os conhecimentos de Angular dos cursos que estou realizando. Aplicando conceitos de diretivas | Arquitetura de pastas | aplicação do Angular CLI | Componentização | deploy do projeto",
+        video: playstation_video
+    },
+
+    {
+        id: 8,
         image: [frontPoste1, frontPoste2, frontPoste3, frontPoste4],
         title: "Projeto Rede Social",
         tecnologies: [iconTec.ts, iconTec.react, iconTec.tailwind, iconTec.git, iconTec.node, iconTec.prisma, iconTec.jwt, iconTec.postgres, iconTec.sqlite],
@@ -153,15 +164,5 @@ export const projetos = [
         video: rede_social_video
     },
 
-    {
-        id: 8,
-        image: [playstation],
-        title: "Projeto Rede Social",
-        tecnologies: [iconTec.ts, iconTec.angular, iconTec.html, iconTec.css, iconTec.git],
-        linkProject: "https://plystationstoreclone.netlify.app/",
-        linkGitHub: "https://github.com/CamposLeo95/projeto_playstation_store_angular",
-        description: "Clone da playstation store para aplicar os conhecimentos de Angular dos cursos que estou realizando. Aplicando conceitos de diretivas | Arquitetura de pastas | aplicação do Angular CLI | Componentização | deploy do projeto",
-        video: playstation_video
-    }
 
 ].reverse()

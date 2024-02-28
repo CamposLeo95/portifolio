@@ -6,8 +6,9 @@ export const SecondContainer = styled.div`
     justify-content: center;
     gap: 50px;
     align-items: center;
-    margin: 30px 0; 
-    /* background-color: red; */
+    /* margin: 30px 0;  */
+    background-image: linear-gradient(45deg, #000,#000000dc, #000000);
+    padding: 30px 0;
 
     & .card-projetos{
         width:100%;

@@ -1,12 +1,16 @@
 import styled from "styled-components";
+import bgWhite from '../../assets/img/fundoWhite.png'
 
 export const MainContainer = styled.section`
     width: 100vw;
     display: flex;
     justify-content: center;
-    gap: 50px;
     font-size: 1.6rem;
-    padding: 20px 0; 
+    background-color: #fff;
+    background-image: url(${bgWhite});
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right -605px top;
 
 
     & h2{
@@ -15,6 +19,7 @@ export const MainContainer = styled.section`
     }
 
     & .span-about-two{
+        color: #fff;
         font-family: var(--font-family-secundaria);
     }
 
@@ -36,44 +41,47 @@ export const MainContainer = styled.section`
         flex-direction: column;
         align-items: center;
         text-align: center;
-        margin-top: 10px;
-        gap: 5px;
+        margin-top: 20px;
+        gap: 20px;
     }
 
     & .card-about{
-        margin-top:5px;
-        padding:50px 10px;
-        gap: 30px;
         border-radius: 3px;
         border-top: var(--borda-top);
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding-top: 20px;
 
         & .card-descricao{
             display: flex;
             flex-direction:column;
-            width: 80%;
-            height: 100%;
             gap:10px;
         }
 
         & .texto-distaque{
             font-weight: 600;
-
         }
     }
 
-    @media (min-width: 760px) {
+    & .container-skill{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+        margin-bottom: 30px;
+    }
 
-        margin-top:50px;  
+    @media (min-width: 760px) {
+        background-position: right -200px top;
 
         & .card-about{
-        margin: 20px 0;
-        display: flex;
-        flex-direction: row;
-        gap: 50px;
+            margin: 20px 0;
+            display: flex;
+            flex-direction: row;
+            gap: 50px;
 
         }
 
@@ -83,8 +91,26 @@ export const MainContainer = styled.section`
 
         & .card-descricao{
             text-align:start;
-            width: 50%;
         }
+
+        & .container-skill{
+            justify-content: center;
+            flex-direction: row;
+            gap: 20px;
+        }
+
     }
+
+    @media (min-width: 1024px) {
+
+    background-position: right -100px top;
+
+        & .container-skill{
+            gap: 50px;
+        }
+
+    }
+
+    
 
 `

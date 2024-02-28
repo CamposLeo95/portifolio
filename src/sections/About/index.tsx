@@ -1,14 +1,13 @@
 // Styled-Components
 import Container from "../../components/Container"
-import { MainContainer } from "./styles"
-
-import imgPerfil from "../../assets/img/perfil.png"
-import CardImg from "../../components/CardImg"
+import * as S from "./styles"
+import CardSkill from "../../components/CardSkill"
+import { RiComputerLine, RiDatabase2Line, RiFileSettingsLine } from "react-icons/ri"
 
 export default function About() {
 
     return (
-        <MainContainer>
+        <S.MainContainer>
             <Container>
                 <div className="about">
                     <h2>
@@ -24,8 +23,7 @@ export default function About() {
                         </span>
                     </p>
                     <div className="card-about">
-                        <CardImg img={imgPerfil} />
-                        <div className="card-descricao">
+                        <div className="card-descricao-">
                             <p>
                                 Profissional com experiência na criação de soluções e aplicações web. Comprometido em entregar qualidade e organização no desenvolvimento de projetos. Vivência na utilização de linguagens e frameworks Front-end, como
                                 <span className="texto-distaque"> HTML, CSS, JavaScript, TypeScript, React e Angular. </span>
@@ -35,8 +33,13 @@ export default function About() {
                             </p>
                         </div>
                     </div>
+                    <div className="container-skill">
+                        <CardSkill title="dasdas" content="dasdasda" icon={<RiComputerLine />} />
+                        <CardSkill title="dasdas" content="dasdasda" icon={<RiComputerLine />} />
+                        <CardSkill title="dasdas" content="dasdasda" icon={<RiComputerLine />} />
+                    </div>
                 </div>
             </Container>
-        </MainContainer>
+        </S.MainContainer>
     )
 }
