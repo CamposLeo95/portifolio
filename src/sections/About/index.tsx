@@ -33,11 +33,11 @@ export default function About() {
                             </p>
                         </div>
                     </div>
-                    <div className="container-skill">
+                    {/* <div className="container-skill">
                         <CardSkill title="dasdas" content="dasdasda" icon={<RiComputerLine />} />
                         <CardSkill title="dasdas" content="dasdasda" icon={<RiComputerLine />} />
                         <CardSkill title="dasdas" content="dasdasda" icon={<RiComputerLine />} />
-                    </div>
+                    </div> */}
                 </div>
             </Container>
         </S.MainContainer>
