@@ -10,12 +10,10 @@ export default function Header() {
     return (
         <S.MainContainer>
             <S.Banner>
-                <div className='texto-principal'>
-                    <h1>
-                        <span className='span-title-one'>Desenvolvedor,</span>
-                        <span className='span-title-two'> Full Stack</span>
-                    </h1>
-                </div>
+                <S.MainText>
+                    <span className='span-title-one'>Desenvolvedor,</span>
+                    <span className='span-title-two'> FullStack</span>
+                </S.MainText>
                 <div className='conteudo'>
                     <h2>{subtitle}</h2>
                     <p>

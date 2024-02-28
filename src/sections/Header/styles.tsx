@@ -16,20 +16,6 @@ export const MainContainer = styled.section`
     justify-content: space-evenly;
     position: relative;
 
-    & .span-title-one{
-        font-family: var(--font-family-secundaria);
-        margin: 8px 0;
-        font-size: 20px;
-    }
-
-    & .span-title-two{
-        font-family: var(--font-family-secundaria);
-        font-size: 20px;
-        font-weight: 100;
-        font-family: "Cinzel Decorative", serif;
-        font-weight: 400;
-        
-    }
 
     & .texto-distaque{
         font-size: 16px;
@@ -233,4 +219,22 @@ export const Banner = styled.div`
 
         }
     
+`
+
+export const MainText = styled.div`
+
+    & .span-title-one{
+        font-family: var(--font-family-secundaria);
+        margin: 8px 0;
+        font-size: 20px;
+    }
+
+    & .span-title-two{
+        font-family: var(--font-family-secundaria);
+        font-size: 20px;
+        font-weight: 100;
+        font-family: "Cinzel Decorative", serif;
+        font-weight: 400;
+        
+    }
 `
