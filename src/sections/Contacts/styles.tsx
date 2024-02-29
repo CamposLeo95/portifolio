@@ -6,7 +6,6 @@ export const Container = styled.div`
     background-image: url(${`${bgBlack}`});
     background-repeat: no-repeat;
     background-size: cover;
-    /* transform: rotate(180deg); */
 `
 
 export const SecondContainer = styled.div`
@@ -58,8 +57,9 @@ export const CardForm = styled.div`
         color: #fff;
 
         & h3{
-            font-size:var(--font-header-um);
-            font-family: var(--font-family-secundaria);
+            font-size: 2.5rem;
+            font-family: var(--font-family-terceira);
+            font-weight: 400;
         }
 
         & p{
@@ -67,9 +67,7 @@ export const CardForm = styled.div`
         }
     }
 
-
-
-    @media (min-width: 815px) {
+    @media (min-width: 768px) {
 
         flex-direction:row;
 
@@ -81,7 +79,14 @@ export const CardForm = styled.div`
             display:flex;
             gap: 30px;
         }
-    }
+        & .descricao{
+            & h3{
+                font-size: 3.5rem;
+                font-family: var(--font-family-terceira);
+                font-weight: 400;
+            }
+        }
+}
 
 `
 export const Form = styled.form`
