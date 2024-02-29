@@ -6,23 +6,20 @@
 import { iconTec } from "./images"
 
 import churras from "../img/churrascometro.png"
+
 import previsao from "../img/previsao.png"
+
 import velha from "../img/velha.png"
+
 import todo from "../img/todo.png"
 
 import poke from "../img/poke.png"
-import poke2 from "../img/poke2.png"
-import poke3 from "../img/poke3.png"
 
 import port from "../img/portfolio.png"
 
 import car_redux from "../img/carrinho_redux.png"
-import car_redux2 from "../img/carrinho_redux2.png"
 
-import frontPoste1 from "../img/frontPoste1.png"
-import frontPoste2 from "../img/frontPoste2.png"
-import frontPoste3 from "../img/frontPoste3.png"
-import frontPoste4 from "../img/frontPoste4.png"
+import social from "../img/frontPoste1.png"
 
 import playstation from "../img/playstation.png"
 
@@ -83,7 +80,7 @@ export const projetos = [
 
     {
         id: 4,
-        image: [poke2, poke, poke3],
+        image: [poke],
         title: "Pokedex",
         tecnologies: [iconTec.react, iconTec.html, iconTec.css, iconTec.git],
         linkProject: "https://projeto-pokedex-sand.vercel.app/",
@@ -110,7 +107,7 @@ export const projetos = [
     },
     {
         id: 6,
-        image: [car_redux, car_redux2],
+        image: [car_redux],
         title: "Carrinho - Redux",
         tecnologies: [iconTec.ts, iconTec.react, iconTec.tailwind, iconTec.redux],
         linkGitHub: "https://github.com/CamposLeo95/projeto_redux_toolkit",
@@ -127,7 +124,7 @@ export const projetos = [
         id: 7,
         image: [playstation],
         title: "Projeto Rede Social",
-        tecnologies: [iconTec.ts, iconTec.angular, iconTec.html, iconTec.css, iconTec.git],
+        tecnologies: [iconTec.ts, iconTec.angular, iconTec.html, iconTec.css],
         linkProject: "https://plystationstoreclone.netlify.app/",
         linkGitHub: "https://github.com/CamposLeo95/projeto_playstation_store_angular",
         description: "Clone da playstation store para aplicar os conhecimentos de Angular dos cursos que estou realizando. Aplicando conceitos de diretivas | Arquitetura de pastas | aplicação do Angular CLI | Componentização | deploy do projeto",
@@ -136,9 +133,9 @@ export const projetos = [
 
     {
         id: 8,
-        image: [frontPoste1, frontPoste2, frontPoste3, frontPoste4],
+        image: [social],
         title: "Projeto Rede Social",
-        tecnologies: [iconTec.ts, iconTec.react, iconTec.tailwind, iconTec.git, iconTec.node, iconTec.prisma, iconTec.jwt, iconTec.postgres, iconTec.sqlite],
+        tecnologies: [iconTec.ts, iconTec.react, iconTec.tailwind, iconTec.node, iconTec.postgres],
         linkProject: "https://projeto-front-post.vercel.app/",
         linkGitHub: "https://github.com/CamposLeo95/projeto_front_post",
         description: "Projeto baseado em uma rede social utilizando React, Tailwind, Node e banco de dados PostgreSQLcom o objetivo de implementar um sistema de postagens semelhante ao Twitter. O projeto permite a criação de usuários com permissões, possibilitando que eles façam postagens.",

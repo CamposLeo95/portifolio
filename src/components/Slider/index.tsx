@@ -8,7 +8,8 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 import { ProjetosProps } from '../../interfaces/interfaces';
-import CardProjeto from '../CardProjeto';
+import CardProject from '../CardProject';
+
 
 type SliderProps = {
   projetos: ProjetosProps[]
@@ -17,8 +18,8 @@ type SliderProps = {
 export default function Slider({ projetos }: SliderProps) {
   return (
     <Swiper
-      modules={[Navigation, Pagination, Autoplay]}
-      loop={false}
+      modules={[Autoplay, Pagination, Navigation]}
+      loop={true}
       breakpoints={{
         640: {
           slidesPerView: 1,
@@ -29,16 +30,17 @@ export default function Slider({ projetos }: SliderProps) {
           spaceBetween: 40,
         },
         1024: {
-          slidesPerView: 3,
+          slidesPerView: 2,
           spaceBetween: 50,
         },
       }}
-
+      spaceBetween={30}
+      pagination={true}
     >
       {
-        projetos.map((P) => (
-          <SwiperSlide key={P.id} >
-            <CardProjeto key={P.id}
+        projetos.map((P, index) => (
+          <SwiperSlide key={index} >
+            <CardProject
               id={P.id}
               description={P.description}
               image={P.image}
