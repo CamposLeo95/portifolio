@@ -2,7 +2,7 @@
 import Container from "../../components/Container"
 import * as S from "./styles"
 import CardSkill from "../../components/CardSkill"
-import { RiComputerLine, RiDatabase2Line, RiFileSettingsLine } from "react-icons/ri"
+import { DataSkill, Description } from "./data/Data"
 
 export default function About() {
 
@@ -16,28 +16,29 @@ export default function About() {
                     </h2>
                     <p>
                         <span className="span-citacao-frase">
-                            "Ser forte não significa nunca cair, mas sim levantar-se todas as vezes que você cai."
+                            "O maior prazer na vida é fazer o que as pessoas dizem que você não é capaz de fazer."
                         </span>
                         <span className="span-citacao-criador">
-                            Nelson Mandela
+                            Walter Bagehot
                         </span>
                     </p>
                     <div className="card-about">
-                        <div className="card-descricao-">
-                            <p>
-                                Profissional com experiência na criação de soluções e aplicações web. Comprometido em entregar qualidade e organização no desenvolvimento de projetos. Vivência na utilização de linguagens e frameworks Front-end, como
-                                <span className="texto-distaque"> HTML, CSS, JavaScript, TypeScript, React e Angular. </span>
-                            </p>
-                            <p>
-                                Com conhecimentos em tecnologias Back-end, utilizando <span className="texto-distaque"> Node, Postgres e MongoDB. </span> Versionamento de código com <span className="texto-distaque"> GIT e GitHub </span>e criação de imagens com <span className="texto-distaque"> Docker</span>. Boa comunicação, compreensão das necessidades do cliente e participação ativa, fornecendo ideias e feedbacks construtivos.
-                            </p>
-                        </div>
+                        {Description.map((item, index) => (
+                            <span key={index}>{item}</span>
+                        ))}
                     </div>
-                    <div className="container-skill">
-                        <CardSkill title="dasdas" content="dasdasda" icon={<RiComputerLine />} />
-                        <CardSkill title="dasdas" content="dasdasda" icon={<RiComputerLine />} />
-                        <CardSkill title="dasdas" content="dasdasda" icon={<RiComputerLine />} />
-                    </div>
+                    <ul className="container-skill">
+                        {DataSkill.map((item, index) => (
+                            <CardSkill
+                                key={index}
+                                title={item.title}
+                                content={item.content}
+                                icon={<item.icon />}
+                                delay={Number(`0.${index}`)}
+                            />
+                        ))}
+                    </ul>
+
                 </div>
             </Container>
         </S.MainContainer>

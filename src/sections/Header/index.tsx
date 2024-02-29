@@ -17,7 +17,8 @@ export default function Header() {
                 <S.ContainerInfo>
                     <S.Subtitle>{subtitle}</S.Subtitle>
                     <S.Content>
-                        Profissional com experiência na criação de soluções e aplicações web. Comprometido em entregar qualidade e organização no desenvolvimento de projetos. Vivência na utilização de linguagens e frameworks Front-end, como <S.TextBold> HTML, CSS, JavaScript, TypeScript, React e Angular.</S.TextBold>
+                        Profissional com mais de 2 anos de experiência na criação de projetos web, cursando<S.TextBold> MBA - Arquitetura e Engenharia de software</S.TextBold>. Destacado pelo desenvolvimento de soluções Front e Back end, comprometido na entrega de serviços com agilidade e qualidade. Vivência com tecnologias Front-end, utilizando <S.TextBold> React, TypeScript, HTML, CSS, JavaScript.</S.TextBold> E Back end com
+                        <S.TextBold> NodeJs, postgresSQL, MongoDB.</S.TextBold> Versionamento com <S.TextBold> Git, GitHUB e GitFlow.</S.TextBold>
                     </S.Content>
                     <S.CardIcons>
                         <a href="https://www.linkedin.com/in/leonardo-a-campos/" target="_blank">
@@ -36,6 +37,7 @@ export default function Header() {
             <S.SquareDesign />
             <S.LineSquareDesign />
             <S.LineDownDesign />
+
             <S.CardPerfilImage>
                 <img src={imgPerfil} />
             </S.CardPerfilImage>

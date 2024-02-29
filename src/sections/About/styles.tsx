@@ -13,10 +13,9 @@ export const MainContainer = styled.section`
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-
+    overflow: hidden;
 
     & h2{
-
         color: var(--cor-azul-claro); 
         font-size: var(--font-header-um); 
     }
@@ -49,24 +48,22 @@ export const MainContainer = styled.section`
         flex-direction: column;
         align-items: center;
         text-align: center;
-        margin-top: 20px;
+        margin-top: 10px;
         gap: 20px;
     }
 
     & .card-about{
+        position: relative;
+        top: 70px;
+        gap: 20px;
+        padding-top: 15px;
         border-radius: 3px;
         border-top: var(--borda-top);
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding-top: 20px;
-
-        & .card-descricao{
-            display: flex;
-            flex-direction:column;
-            gap:10px;
-        }
+        margin-bottom: 80px;
 
         & .texto-distaque{
             font-weight: 600;
@@ -78,35 +75,26 @@ export const MainContainer = styled.section`
         display: flex;
         align-items: center;
         flex-direction: column;
-        gap: 20px;
+        gap: 15px;
         margin-bottom: 30px;
     }
 
-    @media (min-width: 760px) {
+    @media (min-width: 768px) {
         background-image: url(${bgTablet});
 
         & .card-about{
-            margin: 20px 0;
+            padding-top: 60px;
             display: flex;
-            flex-direction: row;
-            gap: 50px;
+            flex-direction: column;
+            margin-top: 60px; 
+            gap: 10px;
+            top: 0px;
 
-        }
-        & .span-citacao-criador{
-        }
-
-        & img{
-            width: 250px;
-        }
-
-        & .card-descricao{
-            text-align:start;
         }
 
         & .container-skill{
             justify-content: center;
             flex-direction: row;
-            gap: 20px;
         }
 
     }
@@ -114,6 +102,14 @@ export const MainContainer = styled.section`
     @media (min-width: 1024px) {
 
         background-image: url(${bgPc});
+
+         & .card-about{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            top: 30px;
+
+        }
 
         & .container-skill{
             gap: 50px;
