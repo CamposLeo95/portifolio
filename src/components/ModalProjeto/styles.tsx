@@ -10,6 +10,10 @@ export const Container = styled.div`
     top: 0;
     z-index: 10;
     background-color: #a8a8a8a9;  
+
+    @media (min-width: 1024px ) {
+
+    }
     
 `
 export const Close = styled.div`
@@ -21,9 +25,7 @@ export const Close = styled.div`
     font-size: 15px;
     font-weight: bold;
 
-    @media (min-width: 768px ) {
-        left: 20px;
-    }
+
 
 
 `
@@ -50,11 +52,8 @@ export const CardModal = styled.div`
         max-height: 60vh;
     }
 
-    @media (min-width: 912px ) {
-    }
-
     @media (min-width: 1024px ) {
-        max-height: 80vh;
+        min-height: 90vh;
     }
 `
 export const Screen = styled.div`
